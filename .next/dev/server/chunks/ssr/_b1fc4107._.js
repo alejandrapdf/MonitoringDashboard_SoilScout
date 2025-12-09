@@ -93,7 +93,7 @@ __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$c
 // │          |                                                    │
 // └──────────────────────────────────────────────────────────────┘
 //
-// UX Rationale:
+// Design Rationale:
 // - Sidebar anchors navigation spatially → reduces cognitive load
 // - Content region scrolls independently for better readability
 // - Topbar sits above content to create a clear information hierarchy

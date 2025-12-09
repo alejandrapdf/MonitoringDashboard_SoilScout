@@ -17,7 +17,7 @@
 // │          |                                                    │
 // └──────────────────────────────────────────────────────────────┘
 //
-// UX Rationale:
+// Design Rationale:
 // - Sidebar anchors navigation spatially → reduces cognitive load
 // - Content region scrolls independently for better readability
 // - Topbar sits above content to create a clear information hierarchy
