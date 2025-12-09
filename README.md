@@ -1,121 +1,106 @@
-🌱 Dashboard
+Here is a **professional, polished README**, structured as a real world project handover.
+It's clean, direct, developer-friendly, and much more usable — while matching your codebase design and UX clarity.
 
-A modern, extendable **Next.js UI Dashboard** built for testing, learning & scaling.
+I also left a section for you to insert a screenshot preview.
 
+---
+
+# 🌱 SoilScout — Site Health Monitoring Dashboard
+
+A clean, responsive **Next.js sensor dashboard** designed for clarity, scalability, and modern UI best-practice.
+Visualizes soil moisture + temperature trends, includes responsive chart display, and supports future expansion to real API data streams.
+
+---
+
+<br>
+
+## 📸 UI Preview
+
+![alt text](image.png)
+
+---
+
+<br>
 
 ## 🚀 Features
 
-| Feature                   | Description                                      |
-| ------------------------- | ------------------------------------------------ |
-| ⚡ Next.js 14 (App Router) | Fast, file-based routing & server rendering      |
-| 🎨 Global CSS Layout      | Clean structure & easy styling from one place    |
-| 🧭 Multi-Page Navigation  | Includes example routing from Home → Second Page |
-| 🔍 Cypress E2E Testing    | Pre-configured navigation test included          |
-| 🔥 Optimized for Growth   | Add pages, components & deployments easily       |
+| Feature                      | Detail                                                     |
+| ---------------------------- | ---------------------------------------------------------- |
+| 📊 Sensor Metric Dashboard   | Soil Moisture + Temperature with trend visualisation       |
+| 🔄 Metric Toggle             | Instantly switch data displayed in the chart               |
+| 📈 Summary Stats             | Min / Max / Latest values auto-computed via custom hook    |
+| 🎨 Responsive UI + Dark Mode | Works on desktop + mobile, theme persists via localStorage |
+| 🧠 Clean Component System    | Card, Toggle, Dashboard Sections, Sidebar, Topbar          |
+| 🧪 Cypress E2E Test Included | Verifies metric switching behaviour end-to-end             |
 
+---
 
-## 📦 Requirements
+<br>
 
-Before starting, ensure you have:
+## 🗂 Project Structure
 
-### 🟢 Node.js (Required)
+```
+app/
+ ├─ layout.js                        → Global Root Layout (Sidebar + Topbar)
+ ├─ page.js                          → Dashboard Home
+ ├─ components/dashboard/
+ │   ├─ MetricCard.js                → KPI card component
+ │   ├─ MetricToggle.js              → Moisture ↔ Temperature switch
+ │   ├─ MetricDisplaySection.js      → Summary + Line Chart section
+ │   ├─ Sidebar.js                   → Navigation sidebar
+ │   └─ Topbar.js                    → Header + Search + Avatar dropdown
+ ├─ hooks/
+ │   └─ useSensorData.js             → Extract + process mock data
+ ├─ lib/data/mockSensorData.js       → Local 7–14 point sensor dataset
+ ├─ globals.css                      → Theme + visual system variables
+cypress/e2e/metricSwitch.cy.js       → Verifies chart metric toggle
+public/                              → Logos + static assets
+```
 
-| Download                                 | Version Recommended |
-| ---------------------------------------- | ------------------- |
-| [https://nodejs.org](https://nodejs.org) | `18+` or `20+`      |
+---
 
-Check if installed:
+## ⚙ Requirements
+
+| Dependency  | Version           |
+| ----------- | ----------------- |
+| **Node.js** | `18+` recommended |
+| **npm**     | bundled with Node |
+
+Check version:
 
 ```bash
 node -v
 npm -v
 ```
 
-If you see versions → you're ready.
-If not → install Node first.
-
 ---
 
-## 🛠 Installation & Setup
+<br>
 
-### 1️⃣ Clone or Download Project
-
-```bash
-git clone <repository-url>
-cd soilscout_prototype
-```
-
-### 2️⃣ Install Dependencies
+## Setup & Run Locally
 
 ```bash
+git clone <repo-url>
+cd soilscout-dashboard
 npm install
-```
-
-```bash
-npm install lucide-react
-```
-
-### 3️⃣ Start Local Dev Server
-
-```bash
 npm run dev
 ```
 
-Your site is now live on 👉 **[http://localhost:3000](http://localhost:3000)**
+Now visit:
+
+🔗 **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
-## 🗂 Project Structure
+<br>
 
-```
-📦 XXXXXX
- ├─ app/
- │  ├─ page.js        → Home Page
- │  ├─ secondPage/    → Example 2nd Page
- │  │  └─ page.js  
- │  ├─ layout.js      → Root layout + global wrapper
- │  ├─ globals.css    → Global styles & layout visuals
- ├─ public/           → Images & static files
- ├─ cypress/e2e/      → End-to-End tests
-```
-
-
-## 🔍 Testing with Cypress
-
-### Install Cypress
+## Run Cypress Tests
 
 ```bash
-npm install cypress --save-dev
+npm install --save-dev cypress
 npx cypress open
 ```
 
-### Run tests
 
-```bash
-npx cypress open
-```
 
 ---
-
-## 🌍 Deployment Options
-
-| Platform      | Recommended  | Notes                             |
-| ------------- | ------------ | --------------------------------- |
-| **Vercel**    | 🏆 Best      | Instant & automatic for Next.js   |
-| GitHub Pages  | ❗ Limited    | Not ideal for App Router apps     |
-| Static Export | Experimental | Must configure `output: "export"` |
-
-### Deploy to Vercel
-
-```bash
-npm i -g vercel
-vercel
-
-## ⭐ Final Notes
-
-Happy building — you now have:
-
-✔ Next.js boilerplate
-✔ Routing system
-✔ Cypress tests
-

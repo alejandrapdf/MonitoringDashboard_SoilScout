@@ -98,35 +98,36 @@ function Sidebar() {
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
         className: `
-    flex flex-col min-h-screen bg-[var(--sidebar-bg)] transition-all duration-300
-    ${collapsed ? "w-20" : "w-60"} h-screen shadow-inner
-  `,
+        flex flex-col min-h-screen bg-[var(--sidebar-bg)]
+        transition-all duration-300 shadow-inner h-screen
+        ${collapsed ? "w-20" : "w-60"}
+      `,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center justify-center py-6",
                 children: [
                     !collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$soilScout$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$soilScout$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-                        alt: "SoilScout Logo",
+                        alt: "SoilScout logo",
                         width: 130
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 47,
+                        lineNumber: 51,
                         columnNumber: 24
                     }, this),
                     collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$icon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$icon$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-                        alt: "SoilScout Compact Logo",
+                        alt: "SoilScout icon",
                         width: 42
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 48,
+                        lineNumber: 52,
                         columnNumber: 23
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/dashboard/Sidebar.js",
-                lineNumber: 46,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -138,15 +139,15 @@ function Sidebar() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Sidebar.js",
-                            lineNumber: 54,
-                            columnNumber: 37
+                            lineNumber: 57,
+                            columnNumber: 46
                         }, void 0),
                         label: "Dashboard",
                         collapsed: collapsed,
                         pathname: pathname
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 54,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
@@ -155,7 +156,7 @@ function Sidebar() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Sidebar.js",
-                            lineNumber: 55,
+                            lineNumber: 58,
                             columnNumber: 47
                         }, void 0),
                         label: "Sensors",
@@ -163,7 +164,7 @@ function Sidebar() {
                         pathname: pathname
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 55,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
@@ -172,7 +173,7 @@ function Sidebar() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Sidebar.js",
-                            lineNumber: 56,
+                            lineNumber: 59,
                             columnNumber: 47
                         }, void 0),
                         label: "Map",
@@ -180,58 +181,65 @@ function Sidebar() {
                         pathname: pathname
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 56,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/dashboard/Sidebar.js",
-                lineNumber: 53,
+                lineNumber: 56,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/dashboard/Sidebar.js",
-        lineNumber: 38,
+        lineNumber: 41,
         columnNumber: 5
     }, this);
 }
-/**
- * =============================================================================
- * <SidebarItem />
- * Reusable navigation item with dynamic active state.
- *
- * Objectively better than static <button> because:
- * • It scales cleanly for new items
- * • Route-based highlight improves spatial awareness
- * • Collapsed mode preserves icon context
- * =============================================================================
- */ function SidebarItem({ icon, label, collapsed, href, pathname }) {
+/* =============================================================================
+   <SidebarItem />
+   -----------------------------------------------------------------------------
+   Single navigation entry.
+
+   Behavioral Details:
+   • Highlights when the current route matches `href`
+   • Supports compact mode by hiding label but retaining icon
+   • Click target remains large enough for easy interaction
+
+   Why this abstraction matters:
+   - Enables scalable navigation without repeated markup
+   - Keeps active state styling consistent across all links
+   - Works cleanly with new items or nested routes later
+============================================================================= */ function SidebarItem({ icon, label, collapsed, href, pathname }) {
     const isActive = pathname === href;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
         href: href,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: `flex items-center gap-3 cursor-pointer rounded-md px-3 py-2 text-sm font-medium
-        transition hover:bg-zinc-800
-        ${isActive ? "bg-zinc-800 text-green-300" : "text-zinc-300"}`,
+            className: `
+          flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md cursor-pointer
+          transition hover:bg-zinc-800
+          ${isActive ? "bg-zinc-800 text-green-300" : "text-zinc-300"}
+        `,
             children: [
                 icon,
                 !collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     children: label
                 }, void 0, false, {
                     fileName: "[project]/app/components/dashboard/Sidebar.js",
-                    lineNumber: 84,
+                    lineNumber: 94,
                     columnNumber: 24
-                }, this)
+                }, this),
+                " "
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 78,
+            lineNumber: 86,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/dashboard/Sidebar.js",
-        lineNumber: 77,
+        lineNumber: 85,
         columnNumber: 5
     }, this);
 }
@@ -245,19 +253,19 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-out.js [app-ssr] (ecmascript) <export default as LogOut>"); // Lucide icon set used for menu options
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-out.js [app-ssr] (ecmascript) <export default as LogOut>"); // Lucide icons for UI clarity
 "use client";
 ;
 ;
 ;
 function Topbar() {
     /* ==========================================================================
-   🌓 Theme State & Persistence
-   --------------------------------------------------------------------------
-   - Stores theme as "light" | "dark"
-   - Restores saved value on page load
-   - Applies <html class="dark"> for full Tailwind theme switching
-  ========================================================================== */ const [theme, setTheme] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : "light" // ensures SSR + client match
+     THEME STATE + PERSISTENCE
+     --------------------------------------------------------------------------
+     Stores user preference in localStorage so theme persists across reloads.
+     Applies `html.dark` class which allows Tailwind's dark variant styles
+     to update the entire UI without component-level wiring.
+  ========================================================================== */ const [theme, setTheme] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : "light" // SSR-safe fallback
     );
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         document.documentElement.classList.toggle("dark", theme === "dark");
@@ -266,16 +274,14 @@ function Topbar() {
         theme
     ]);
     const toggleTheme = ()=>{
-        const next = theme === "dark" ? "light" : "dark";
-        setTheme(next);
-        document.documentElement.classList.toggle("dark", next === "dark");
-        localStorage.setItem("theme", next);
+        setTheme((prev)=>prev === "dark" ? "light" : "dark");
     };
     /* ==========================================================================
-   👤 Avatar Dropdown Menu (Profile + Theme)
-   --------------------------------------------------------------------------
-   - menuOpen controls dropdown visibility
-   - Clicking outside the menu closes it (accessibility smart behaviour)
+     USER DROPDOWN MENU
+     --------------------------------------------------------------------------
+     - menuOpen controls dropdown visibility
+     - Click-outside behavior auto-closes panel
+     - Future space for authentication controls and settings
   ========================================================================== */ const [menuOpen, setMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const menuRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
@@ -288,12 +294,16 @@ function Topbar() {
         return ()=>document.removeEventListener("click", handleClick);
     }, []);
     /* ==========================================================================
-   🔸 Render Header
-   --------------------------------------------------------------------------
-   Layout:
-   ┌─────────────────────────┬─────────────────────────────────────────┐
-   │        Dashboard        │ Search + Avatar + Dropdown              │
-   └─────────────────────────┴─────────────────────────────────────────┘
+     UI LAYOUT STRUCTURE
+     --------------------------------------------------------------------------
+     ┌───────────────────── Left ─────────────────────┐
+     │  Page Title                                       │
+     │───────────────────────────────────────────────────│
+     │                Search • Avatar • Theme Toggle     │
+     └───────────────────── Right ──────────────────────┘
+
+     Title first → confirms page context  
+     Tools aligned right → predictable, efficient interaction cluster  
   ========================================================================== */ return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: "flex items-center justify-between w-full px-6 py-4   bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50   border-b border-zinc-200 dark:border-zinc-800",
         children: [
@@ -302,7 +312,7 @@ function Topbar() {
                 children: "Dashboard"
             }, void 0, false, {
                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                lineNumber: 90,
+                lineNumber: 94,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -314,7 +324,7 @@ function Topbar() {
                         className: "w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-sm border border-zinc-300 dark:border-zinc-700   focus:outline-none focus:ring-2 focus:ring-green-500"
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                        lineNumber: 97,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -322,12 +332,12 @@ function Topbar() {
                         ref: menuRef,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>setMenuOpen(!menuOpen),
+                                onClick: ()=>setMenuOpen((v)=>!v),
                                 className: "w-9 h-9 rounded-full bg-green-700 text-white font-bold   flex items-center justify-center uppercase",
                                 children: "A"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                lineNumber: 108,
+                                lineNumber: 110,
                                 columnNumber: 11
                             }, this),
                             menuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -340,14 +350,14 @@ function Topbar() {
                                                 size: 16
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                lineNumber: 126,
+                                                lineNumber: 127,
                                                 columnNumber: 17
                                             }, this),
                                             " Logout"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                                        lineNumber: 125,
+                                        lineNumber: 126,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -357,7 +367,7 @@ function Topbar() {
                                                 children: "Dark Mode"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                lineNumber: 131,
+                                                lineNumber: 132,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -369,42 +379,42 @@ function Topbar() {
                     ${theme === "dark" ? "translate-x-5" : ""}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                    lineNumber: 137,
+                                                    lineNumber: 138,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                lineNumber: 132,
+                                                lineNumber: 133,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                                        lineNumber: 130,
+                                        lineNumber: 131,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                lineNumber: 118,
+                                lineNumber: 120,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                        lineNumber: 107,
+                        lineNumber: 109,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                lineNumber: 94,
+                lineNumber: 97,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/dashboard/Topbar.js",
-        lineNumber: 83,
+        lineNumber: 87,
         columnNumber: 5
     }, this);
 }

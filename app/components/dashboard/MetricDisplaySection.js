@@ -1,25 +1,25 @@
 "use client";
 
 /* =============================================================================
-   MetricDisplaySection (UI & UX rationale)
+   MetricDisplaySection
    -----------------------------------------------------------------------------
-   This component presents sensor readings in a format suited for quick monitoring.
-   The UI is intentionally structured so a user can:
+   Presents sensor readings in a way optimised for fast human interpretation.
 
-   • Immediately see the latest reading in a large, high-contrast card (high priority)
-   • Compare that reading against minimum + maximum values from the dataset
-   • Visually observe how values trend over time via a line chart
+   Users can:
+   • Read the latest recorded measurement immediately
+   • Compare it against historic minimum & maximum values
+   • Understand how the value has trended over time
 
-   Data is mocked locally per assignment requirements — but UI is designed so a
-   live API feed can replace mock data later without redesign.
+   This component works with externally supplied data and can be connected to
+   live streaming or API retrieval without requiring UI changes.
 ============================================================================= */
 
 import MetricCard from "./MetricCard";
-import { mockSensorData } from "@/lib/mockSensorData";
+import { mockSensorData } from "@/lib/data/mockSensorData";
 import { Line } from "react-chartjs-2";
 import { useSensorData } from "../hooks/useSensorData";
 
-// Chart.js modules (visual output layer)
+// Chart.js modules (visual rendering pipeline)
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -30,38 +30,36 @@ import {
   Legend
 } from "chart.js";
 
-// Registered once globally → keeps component clean
+// Registered globally → reduces repetition across components
 ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Tooltip, Legend);
 
 
 export default function MetricDisplaySection({ metric }) {
 
- 
-//"Custom Hook" requirement
-const { values, latest, min, max } = useSensorData(metric);
+  // Extract processed values & summary statistics via custom hook
+  const { values, latest, min, max } = useSensorData(metric);
 
-
+  // Formats timestamps into compact, human-readable dates for chart labels
   const formattedDates = mockSensorData.map(entry =>
-  new Intl.DateTimeFormat("en-GB", {
-    weekday: "short",   // Mon, Tue, Wed
-    day: "numeric",     // 1, 2, 3
-    month: "short"      // Jan, Feb, Mar
-  }).format(entry.time)
-);
-
+    new Intl.DateTimeFormat("en-GB", {
+      weekday: "short",   // Mon, Tue, Wed...
+      day: "numeric",     // 1, 2, 3...
+      month: "short"      // Jan, Feb, Mar...
+    }).format(entry.time)
+  );
 
 
   /* ---------------------------------------------------------------------------
-     CHART UI DESIGN DECISIONS:
-     • Single line graph -> reduces visual noise, follows requirement scope
-     • Smooth curves (tension: 0.35) make trend easier to visually follow
-     • Green theme communicates "environmental metric" subconsciously
-     • Dots enabled so each reading is visually discrete → reinforces time-series data
-
-     This visualization complements summary cards by answering: "How are values trending?"
+     Chart Visualization Principles
+     ---------------------------------------------------------------------------
+     • A single line chart keeps the visual footprint clean and focused
+     • Curved strokes (tension 0.35) make directional movement easy to track
+     • Green palette communicates organic/biometric/environmental data
+     • Visible points reassure users that each reading is discrete (not interpolated)
   --------------------------------------------------------------------------- */
   const chartData = {
-    labels: formattedDates, datasets: [
+    labels: formattedDates,
+    datasets: [
       {
         label: metric === "moisture" ? "Soil Moisture (%)" : "Temperature (°C)",
         data: values,
@@ -76,7 +74,7 @@ const { values, latest, min, max } = useSensorData(metric);
   const chartOptions = {
     responsive: true,
     plugins: {
-      legend: { labels: { color: "#ddd" } }, // Low-contrast legend so the line stays dominant
+      legend: { labels: { color: "#ddd" } }, // Soft legend contrast keeps attention on the line
       tooltip: {
         callbacks: {
           label: ctx => `${ctx.raw}${metric === "moisture" ? "%" : "°C"}`
@@ -84,7 +82,6 @@ const { values, latest, min, max } = useSensorData(metric);
       }
     },
     scales: {
-      // Muted axis ticks keep attention on the trend line instead of grid
       x: { ticks: { color: "#ccc" } },
       y: { ticks: { color: "#ccc" } }
     }
@@ -92,75 +89,85 @@ const { values, latest, min, max } = useSensorData(metric);
 
 
   /* =============================================================================
-     UI Layout Summary
+     Layout Rationale
      -----------------------------------------------------------------------------
-     - Metric summary cards appear ABOVE the chart because humans scan numbers first
-     - Three-card grid → balanced layout, symmetric, digestible
-     - Chart sits in a dark rounded container, giving clear visual separation
-     - Component spacing (gap-6) increases readability and reduces cognitive load
+     1. Numeric summaries are placed before the chart — numbers are parsed faster
+     2. Three-card layout provides balance and predictable reading rhythm
+     3. The chart is visually segmented with a dark background + rounded container
+     4. Generous spacing (gap-6) reduces cognitive load while scanning
 ============================================================================= */
   return (
     <section className="flex flex-col gap-6">
 
-      {/* ========= SUMMARY CARDS ========= */}
-      <div className="grid sm:grid-cols-3 gap-6 mt-3 " data-cy="metric-cards">
+      {/* --- SUMMARY CARDS (highest-priority information) --- */}
+      <div className="grid sm:grid-cols-3 gap-6 mt-3" data-cy="metric-cards">
+
         <MetricCard
           label={`Latest ${metric === "moisture" ? "Soil Moisture" : "Temperature"}`}
           value={`${latest}${metric === "moisture" ? "%" : "°C"}`}
         />
+
         <MetricCard
           label="Minimum"
           value={`${min}${metric === "moisture" ? "%" : "°C"}`}
         />
+
         <MetricCard
           label="Maximum"
           value={`${max}${metric === "moisture" ? "%" : "°C"}`}
         />
-      </div>
-  <h3 className="text-xl font-semibold mb-1 text-zinc-200">
-  Trend
-</h3>
-      {/* ========= TIME-SERIES TREND CHART ========= */}
- <div className="rounded-xl bg-[#2B2F31] shadow-lg h-[420px] p-2 sm:p-4 md:p-6 flex items-center justify-center">
 
-  <Line
-    data={chartData}
-    options={{
-      ...chartOptions,
-      datasets: [
-        {
-          ...chartData.datasets[0],
-          borderWidth: 4,           // THICKER = visually confident
-          pointRadius: 7,           // Each data point stands strong
-          pointHoverRadius: 11,
-          borderColor: "rgb(16,185,129)",  // brighter green (more alive)
-          backgroundColor: "rgba(16,185,129,0.22)",
-        }
-      ],
-      scales: {
-        x: {
-          ticks: { color: "#E5E5E5", font: { size: 14 } },
-          grid: { color: "rgba(255,255,255,0.05)" }
-        },
-        y: {
-          ticks: { color: "#E5E5E5", font: { size: 14 } },
-          grid: { color: "rgba(255,255,255,0.07)" },
-          suggestedMin: min - 2,      // Makes chart breathe vertically
-          suggestedMax: max + 2
-        }
-      },
-      plugins: {
-        legend: {
-          labels: {
-            color: "#fff",
-            padding: 20,
-            font: { weight: "bold", size: 14 }
-          }
-        }
-      }
-    }}
-  />
-</div>
+      </div>
+
+      <h3 className="text-xl font-semibold mb-1 text-zinc-200">Trend</h3>
+
+
+      {/* --- TIME-SERIES VISUALIZATION --- */}
+      <div className="rounded-xl bg-[#2B2F31] shadow-lg h-[420px] p-2 sm:p-4 md:p-6 flex items-center justify-center">
+
+        <Line
+          data={chartData}
+          options={{
+            ...chartOptions,
+            datasets: [
+              {
+                ...chartData.datasets[0],
+                borderWidth: 4,      // Reinforces confidence + clarity of trend
+                pointRadius: 7,      // Ensures each sensor reading stands out
+                pointHoverRadius: 11,
+                borderColor: "rgb(16,185,129)",
+                backgroundColor: "rgba(16,185,129,0.22)"
+              }
+            ],
+            scales: {
+              x: {
+                ticks: { color: "#E5E5E5", font: { size: 14 }},
+                grid: { color: "rgba(255,255,255,0.05)" }
+              },
+              y: {
+                ticks: { color: "#E5E5E5", font: { size: 14 }},
+                grid: { color: "rgba(255,255,255,0.07)" },
+
+                // Adding light padding above and below prevents the plotted line from
+                // touching the edges of the chart. This makes the slope easier to read,
+                // avoids perceived cutoffs, and keeps the chart visually breathable.
+                suggestedMin: min - 2,
+                suggestedMax: max + 2
+              }
+            },
+            plugins: {
+              legend: {
+                labels: {
+                  color: "#fff",
+                  padding: 20,
+                  font: { weight: "bold", size: 14 }
+                }
+              }
+            }
+          }}
+        />
+
+      </div>
     </section>
   );
 }

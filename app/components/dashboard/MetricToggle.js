@@ -3,19 +3,23 @@
 /* ============================================================================
    MetricToggle
    ---------------------------------------------------------------------------
-   UI control for switching between two data views:
+   Toggles between two available sensor metrics:
    › Soil Moisture  (%)  
    › Temperature    (°C)
 
-   Why this matters:
-   - Parent component owns state (useState in page.js)
-   - This toggle *does not* store its own state — it triggers updates upwards
-   - Ensures summary cards + chart both react to selection
+   Component Philosophy:
+   - The toggle does not manage its own state — it delegates changes upward
+     through `setMetric()`. Parent components remain the source of truth.
+   - Ensures all downstream UI elements (summary cards + chart) remain in sync.
 
-   Behaviour:
-   - Active selection highlights in brand green + elevated shadow
-   - Inactive options use neutral grey with hover feedback
-   - Fully keyboard accessible + screen-readable
+   Accessibility Notes:
+   - Uses `role="tablist"` and `aria-selected` for screen reader clarity.
+   - Selection is visually and semantically marked for inclusive UX.
+
+   Visual Behaviour:
+   - Active metric shows green highlight and subtle elevation → communicates selection.
+   - Inactive metric remains neutral with hover feedback → indicates interactivity
+     without overpowering the active state.
 ============================================================================ */
 
 
