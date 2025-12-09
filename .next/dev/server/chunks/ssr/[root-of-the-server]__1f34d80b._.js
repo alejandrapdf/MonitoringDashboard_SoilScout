@@ -245,35 +245,55 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-in.js [app-ssr] (ecmascript) <export default as LogIn>"); // icons added
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-in.js [app-ssr] (ecmascript) <export default as LogIn>"); // Lucide icon set used for menu options
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-out.js [app-ssr] (ecmascript) <export default as LogOut>");
 "use client";
 ;
 ;
 ;
 function Topbar() {
-    const [theme, setTheme] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("light");
-    const [menuOpen, setMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    const menuRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
-    /* Restore theme on load */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+    /* ==========================================================================
+   🌓 Theme State & Persistence
+   --------------------------------------------------------------------------
+   - Stores theme as "light" | "dark"
+   - Restores saved value on page load
+   - Applies <html class="dark"> for full Tailwind theme switching
+  ========================================================================== */ const [theme, setTheme] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("light");
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const saved = localStorage.getItem("theme") || "light";
         setTheme(saved);
         document.documentElement.classList.toggle("dark", saved === "dark");
     }, []);
-    /* Toggle dark <-> light */ const toggleTheme = ()=>{
+    const toggleTheme = ()=>{
         const next = theme === "dark" ? "light" : "dark";
         setTheme(next);
         document.documentElement.classList.toggle("dark", next === "dark");
         localStorage.setItem("theme", next);
     };
-    /* Close dropdown when clicking outside */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const close = (e)=>{
-            if (menuRef.current && !menuRef.current.contains(e.target)) setMenuOpen(false);
+    /* ==========================================================================
+   👤 Avatar Dropdown Menu (Profile + Theme)
+   --------------------------------------------------------------------------
+   - menuOpen controls dropdown visibility
+   - Clicking outside the menu closes it (accessibility smart behaviour)
+  ========================================================================== */ const [menuOpen, setMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const menuRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const handleClick = (e)=>{
+            if (menuRef.current && !menuRef.current.contains(e.target)) {
+                setMenuOpen(false);
+            }
         };
-        document.addEventListener("click", close);
-        return ()=>document.removeEventListener("click", close);
+        document.addEventListener("click", handleClick);
+        return ()=>document.removeEventListener("click", handleClick);
     }, []);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+    /* ==========================================================================
+   🔸 Render Header
+   --------------------------------------------------------------------------
+   Layout:
+   ┌─────────────────────────┬─────────────────────────────────────────┐
+   │        Dashboard        │ Search + Avatar + Dropdown              │
+   └─────────────────────────┴─────────────────────────────────────────┘
+  ========================================================================== */ return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: "flex items-center justify-between w-full px-6 py-4   bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50   border-b border-zinc-200 dark:border-zinc-800",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -281,7 +301,7 @@ function Topbar() {
                 children: "Dashboard"
             }, void 0, false, {
                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                lineNumber: 55,
+                lineNumber: 87,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -289,11 +309,11 @@ function Topbar() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                         type: "text",
-                        placeholder: "Search sensors...",
-                        className: "w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 dark:border-zinc-600 shadow-sm border   focus:outline-none focus:ring-2 focus:ring-green-500"
+                        placeholder: "Search...",
+                        className: "w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-sm border border-zinc-300 dark:border-zinc-700   focus:outline-none focus:ring-2 focus:ring-green-500"
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                        lineNumber: 61,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -306,7 +326,7 @@ function Topbar() {
                                 children: "A"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                lineNumber: 71,
+                                lineNumber: 105,
                                 columnNumber: 11
                             }, this),
                             menuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -319,14 +339,14 @@ function Topbar() {
                                                 size: 16
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                lineNumber: 86,
+                                                lineNumber: 121,
                                                 columnNumber: 17
                                             }, this),
                                             " Login"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                                        lineNumber: 85,
+                                        lineNumber: 120,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -336,14 +356,14 @@ function Topbar() {
                                                 size: 16
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                lineNumber: 91,
+                                                lineNumber: 125,
                                                 columnNumber: 17
                                             }, this),
                                             " Logout"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                                        lineNumber: 90,
+                                        lineNumber: 124,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -353,7 +373,7 @@ function Topbar() {
                                                 children: "Dark Mode"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                lineNumber: 96,
+                                                lineNumber: 130,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -365,42 +385,42 @@ function Topbar() {
                     ${theme === "dark" ? "translate-x-5" : ""}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                    lineNumber: 102,
+                                                    lineNumber: 136,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                lineNumber: 97,
+                                                lineNumber: 131,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                                        lineNumber: 95,
+                                        lineNumber: 129,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                lineNumber: 80,
+                                lineNumber: 115,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                        lineNumber: 70,
+                        lineNumber: 104,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                lineNumber: 58,
+                lineNumber: 91,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/dashboard/Topbar.js",
-        lineNumber: 49,
+        lineNumber: 80,
         columnNumber: 5
     }, this);
 }

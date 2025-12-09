@@ -383,7 +383,7 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-in.js [app-client] (ecmascript) <export default as LogIn>"); // icons added
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-in.js [app-client] (ecmascript) <export default as LogIn>"); // Lucide icon set used for menu options
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-out.js [app-client] (ecmascript) <export default as LogOut>");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -394,15 +394,13 @@ var _s = __turbopack_context__.k.signature();
 function Topbar() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(18);
-    if ($[0] !== "93ff0fbc5b873d0b6cfad96e7997693feffaab6e63cf12e1964a752dd93da799") {
+    if ($[0] !== "c5c678a9a3dceb9015e39884793ec6a9f7931afc0a3d33480926b1add9416254") {
         for(let $i = 0; $i < 18; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "93ff0fbc5b873d0b6cfad96e7997693feffaab6e63cf12e1964a752dd93da799";
+        $[0] = "c5c678a9a3dceb9015e39884793ec6a9f7931afc0a3d33480926b1add9416254";
     }
     const [theme, setTheme] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("light");
-    const [menuOpen, setMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const menuRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t0;
     let t1;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -437,20 +435,22 @@ function Topbar() {
         t2 = $[4];
     }
     const toggleTheme = t2;
+    const [menuOpen, setMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const menuRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t3;
     let t4;
     if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
         t3 = ({
             "Topbar[useEffect()]": ()=>{
-                const close = {
-                    "Topbar[useEffect() > close]": (e)=>{
+                const handleClick = {
+                    "Topbar[useEffect() > handleClick]": (e)=>{
                         if (menuRef.current && !menuRef.current.contains(e.target)) {
                             setMenuOpen(false);
                         }
                     }
-                }["Topbar[useEffect() > close]"];
-                document.addEventListener("click", close);
-                return ()=>document.removeEventListener("click", close);
+                }["Topbar[useEffect() > handleClick]"];
+                document.addEventListener("click", handleClick);
+                return ()=>document.removeEventListener("click", handleClick);
             }
         })["Topbar[useEffect()]"];
         t4 = [];
@@ -468,7 +468,7 @@ function Topbar() {
             children: "Dashboard"
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Topbar.js",
-            lineNumber: 91,
+            lineNumber: 99,
             columnNumber: 10
         }, this);
         $[7] = t5;
@@ -479,11 +479,11 @@ function Topbar() {
     if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
         t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
             type: "text",
-            placeholder: "Search sensors...",
-            className: "w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zinc-800 dark:border-zinc-600 shadow-sm border\r\n          focus:outline-none focus:ring-2 focus:ring-green-500"
+            placeholder: "Search...",
+            className: "w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zinc-800 shadow-sm border border-zinc-300 dark:border-zinc-700\r\n          focus:outline-none focus:ring-2 focus:ring-green-500"
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Topbar.js",
-            lineNumber: 98,
+            lineNumber: 106,
             columnNumber: 10
         }, this);
         $[8] = t6;
@@ -500,7 +500,7 @@ function Topbar() {
             children: "A"
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Topbar.js",
-            lineNumber: 105,
+            lineNumber: 113,
             columnNumber: 10
         }, this);
         $[9] = menuOpen;
@@ -520,14 +520,14 @@ function Topbar() {
                             size: 16
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Topbar.js",
-                            lineNumber: 115,
+                            lineNumber: 123,
                             columnNumber: 330
                         }, this),
                         " Login"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/dashboard/Topbar.js",
-                    lineNumber: 115,
+                    lineNumber: 123,
                     columnNumber: 216
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -537,14 +537,14 @@ function Topbar() {
                             size: 16
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Topbar.js",
-                            lineNumber: 115,
+                            lineNumber: 123,
                             columnNumber: 478
                         }, this),
                         " Logout"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/dashboard/Topbar.js",
-                    lineNumber: 115,
+                    lineNumber: 123,
                     columnNumber: 364
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -554,7 +554,7 @@ function Topbar() {
                             children: "Dark Mode"
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Topbar.js",
-                            lineNumber: 115,
+                            lineNumber: 123,
                             columnNumber: 570
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -566,24 +566,24 @@ function Topbar() {
                     ${theme === "dark" ? "translate-x-5" : ""}`
                             }, void 0, false, {
                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                lineNumber: 116,
+                                lineNumber: 124,
                                 columnNumber: 74
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Topbar.js",
-                            lineNumber: 115,
+                            lineNumber: 123,
                             columnNumber: 592
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/dashboard/Topbar.js",
-                    lineNumber: 115,
+                    lineNumber: 123,
                     columnNumber: 514
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/dashboard/Topbar.js",
-            lineNumber: 115,
+            lineNumber: 123,
             columnNumber: 22
         }, this);
         $[11] = menuOpen;
@@ -612,19 +612,19 @@ function Topbar() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/dashboard/Topbar.js",
-                            lineNumber: 127,
+                            lineNumber: 135,
                             columnNumber: 257
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/dashboard/Topbar.js",
-                    lineNumber: 127,
+                    lineNumber: 135,
                     columnNumber: 212
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/dashboard/Topbar.js",
-            lineNumber: 127,
+            lineNumber: 135,
             columnNumber: 10
         }, this);
         $[15] = t7;
@@ -635,7 +635,7 @@ function Topbar() {
     }
     return t9;
 }
-_s(Topbar, "R+59REI+zF9tKYmrh6hlq5ftQt0=");
+_s(Topbar, "IrMlEBc/Den3m1xGJ32YBTbAgMs=");
 _c = Topbar;
 var _c;
 __turbopack_context__.k.register(_c, "Topbar");
