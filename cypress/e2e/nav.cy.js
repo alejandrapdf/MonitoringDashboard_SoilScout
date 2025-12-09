@@ -12,7 +12,6 @@
  *  - UI structure must not change — only data values should
  *  - The dashboard should remain visually stable even if values are missing
  * 
- * This test verifies all of the above in ONE flow (as required).
  * ===========================================================================
  */
 describe("Critical Flow Test – Metric Switching", () => {

@@ -79,10 +79,13 @@ npm -v
 
 ## Setup & Run Locally
 
+Clone repo and install dependencies.
+
 ```bash
 git clone <repo-url>
 cd soilscout-dashboard
 npm install
+npm install lucide-react
 npm run dev
 ```
 
@@ -96,9 +99,13 @@ Now visit:
 
 ## Run Cypress Tests
 
+Open a new command prompt terminal.
+
+cd into project.
+
 ```bash
-npm install --save-dev cypress
-npx cypress open
+npm install cypress
+npx cypress run
 ```
 
 
