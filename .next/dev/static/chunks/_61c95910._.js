@@ -81,16 +81,18 @@ var _s = __turbopack_context__.k.signature();
 function Sidebar() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(34);
-    if ($[0] !== "0d48dcf498f810e912e6723e00ded4ed128f3c792db511814eac6975bb385292") {
+    if ($[0] !== "c0d18c683d11ad26ba6b71d8274153c548b6900d0b1c5f6565602b322d670196") {
         for(let $i = 0; $i < 34; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "0d48dcf498f810e912e6723e00ded4ed128f3c792db511814eac6975bb385292";
+        $[0] = "c0d18c683d11ad26ba6b71d8274153c548b6900d0b1c5f6565602b322d670196";
     }
     const [collapsed, setCollapsed] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
-    const t0 = `h-screen flex flex-col border-r bg-zinc-900 text-white transition-all
-      ${collapsed ? "w-20" : "w-64"} duration-200`;
+    const t0 = `
+    flex flex-col min-h-screen bg-[var(--sidebar-bg)] transition-all duration-300
+    ${collapsed ? "w-20" : "w-60"} h-screen shadow-inner
+  `;
     let t1;
     if ($[1] !== collapsed) {
         t1 = !collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -99,7 +101,7 @@ function Sidebar() {
             width: 130
         }, void 0, false, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 48,
+            lineNumber: 50,
             columnNumber: 24
         }, this);
         $[1] = collapsed;
@@ -115,7 +117,7 @@ function Sidebar() {
             width: 42
         }, void 0, false, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 56,
+            lineNumber: 58,
             columnNumber: 23
         }, this);
         $[3] = collapsed;
@@ -133,7 +135,7 @@ function Sidebar() {
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 64,
+            lineNumber: 66,
             columnNumber: 10
         }, this);
         $[5] = t1;
@@ -162,7 +164,7 @@ function Sidebar() {
             children: t5
         }, void 0, false, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 84,
+            lineNumber: 86,
             columnNumber: 10
         }, this);
         $[10] = t4;
@@ -177,7 +179,7 @@ function Sidebar() {
             size: 18
         }, void 0, false, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 93,
+            lineNumber: 95,
             columnNumber: 10
         }, this);
         $[13] = t7;
@@ -194,7 +196,7 @@ function Sidebar() {
             pathname: pathname
         }, void 0, false, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 100,
+            lineNumber: 102,
             columnNumber: 10
         }, this);
         $[14] = collapsed;
@@ -209,7 +211,7 @@ function Sidebar() {
             size: 18
         }, void 0, false, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 109,
+            lineNumber: 111,
             columnNumber: 10
         }, this);
         $[17] = t9;
@@ -226,7 +228,7 @@ function Sidebar() {
             pathname: pathname
         }, void 0, false, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 116,
+            lineNumber: 118,
             columnNumber: 11
         }, this);
         $[18] = collapsed;
@@ -241,7 +243,7 @@ function Sidebar() {
             size: 18
         }, void 0, false, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 125,
+            lineNumber: 127,
             columnNumber: 11
         }, this);
         $[21] = t11;
@@ -258,7 +260,7 @@ function Sidebar() {
             pathname: pathname
         }, void 0, false, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 132,
+            lineNumber: 134,
             columnNumber: 11
         }, this);
         $[22] = collapsed;
@@ -278,7 +280,7 @@ function Sidebar() {
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 141,
+            lineNumber: 143,
             columnNumber: 11
         }, this);
         $[25] = t10;
@@ -299,7 +301,7 @@ function Sidebar() {
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 151,
+            lineNumber: 153,
             columnNumber: 11
         }, this);
         $[29] = t0;
@@ -330,11 +332,11 @@ _c = Sidebar;
  * =============================================================================
  */ function SidebarItem(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "0d48dcf498f810e912e6723e00ded4ed128f3c792db511814eac6975bb385292") {
+    if ($[0] !== "c0d18c683d11ad26ba6b71d8274153c548b6900d0b1c5f6565602b322d670196") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "0d48dcf498f810e912e6723e00ded4ed128f3c792db511814eac6975bb385292";
+        $[0] = "c0d18c683d11ad26ba6b71d8274153c548b6900d0b1c5f6565602b322d670196";
     }
     const { icon, label, collapsed, href, pathname } = t0;
     const isActive = pathname === href;
@@ -347,7 +349,7 @@ _c = Sidebar;
             children: label
         }, void 0, false, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 195,
+            lineNumber: 197,
             columnNumber: 24
         }, this);
         $[1] = collapsed;
@@ -366,7 +368,7 @@ _c = Sidebar;
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 204,
+            lineNumber: 206,
             columnNumber: 10
         }, this);
         $[4] = icon;
@@ -383,7 +385,7 @@ _c = Sidebar;
             children: t3
         }, void 0, false, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 214,
+            lineNumber: 216,
             columnNumber: 10
         }, this);
         $[8] = href;

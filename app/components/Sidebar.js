@@ -36,9 +36,11 @@ export default function Sidebar() {
 
   return (
     <aside
-      className={`h-screen flex flex-col border-r bg-zinc-900 text-white transition-all
-      ${collapsed ? "w-20" : "w-64"} duration-200`}
-    >
+  className={`
+    flex flex-col min-h-screen bg-[var(--sidebar-bg)] transition-all duration-300
+    ${collapsed ? "w-20" : "w-60"} h-screen shadow-inner
+  `}
+>
 
       {/* Branding */}
       <div className="flex items-center justify-center py-6">

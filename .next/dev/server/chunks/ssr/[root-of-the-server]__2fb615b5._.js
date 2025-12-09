@@ -97,8 +97,10 @@ function Sidebar() {
     const [collapsed, setCollapsed] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
-        className: `h-screen flex flex-col border-r bg-zinc-900 text-white transition-all
-      ${collapsed ? "w-20" : "w-64"} duration-200`,
+        className: `
+    flex flex-col min-h-screen bg-[var(--sidebar-bg)] transition-all duration-300
+    ${collapsed ? "w-20" : "w-60"} h-screen shadow-inner
+  `,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center justify-center py-6",
@@ -109,7 +111,7 @@ function Sidebar() {
                         width: 130
                     }, void 0, false, {
                         fileName: "[project]/app/components/Sidebar.js",
-                        lineNumber: 45,
+                        lineNumber: 47,
                         columnNumber: 24
                     }, this),
                     collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -118,13 +120,13 @@ function Sidebar() {
                         width: 42
                     }, void 0, false, {
                         fileName: "[project]/app/components/Sidebar.js",
-                        lineNumber: 46,
+                        lineNumber: 48,
                         columnNumber: 23
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Sidebar.js",
-                lineNumber: 44,
+                lineNumber: 46,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -134,7 +136,7 @@ function Sidebar() {
                 children: collapsed ? ">" : "<"
             }, void 0, false, {
                 fileName: "[project]/app/components/Sidebar.js",
-                lineNumber: 50,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -146,7 +148,7 @@ function Sidebar() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/components/Sidebar.js",
-                            lineNumber: 60,
+                            lineNumber: 62,
                             columnNumber: 37
                         }, void 0),
                         label: "Dashboard",
@@ -154,7 +156,7 @@ function Sidebar() {
                         pathname: pathname
                     }, void 0, false, {
                         fileName: "[project]/app/components/Sidebar.js",
-                        lineNumber: 60,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
@@ -163,7 +165,7 @@ function Sidebar() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/components/Sidebar.js",
-                            lineNumber: 61,
+                            lineNumber: 63,
                             columnNumber: 47
                         }, void 0),
                         label: "2Page",
@@ -171,7 +173,7 @@ function Sidebar() {
                         pathname: pathname
                     }, void 0, false, {
                         fileName: "[project]/app/components/Sidebar.js",
-                        lineNumber: 61,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
@@ -180,7 +182,7 @@ function Sidebar() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/components/Sidebar.js",
-                            lineNumber: 62,
+                            lineNumber: 64,
                             columnNumber: 47
                         }, void 0),
                         label: "Third Page",
@@ -188,13 +190,13 @@ function Sidebar() {
                         pathname: pathname
                     }, void 0, false, {
                         fileName: "[project]/app/components/Sidebar.js",
-                        lineNumber: 62,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Sidebar.js",
-                lineNumber: 59,
+                lineNumber: 61,
                 columnNumber: 7
             }, this)
         ]
@@ -228,18 +230,18 @@ function Sidebar() {
                     children: label
                 }, void 0, false, {
                     fileName: "[project]/app/components/Sidebar.js",
-                    lineNumber: 90,
+                    lineNumber: 92,
                     columnNumber: 24
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Sidebar.js",
-            lineNumber: 84,
+            lineNumber: 86,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/Sidebar.js",
-        lineNumber: 83,
+        lineNumber: 85,
         columnNumber: 5
     }, this);
 }

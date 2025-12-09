@@ -38,6 +38,7 @@ body {
   font-family: Arial, sans-serif;
   color: var(--gray);
   display: flex;
+    height: 100%;
 }
 
 
@@ -49,15 +50,13 @@ body {
 
 .sidebar {
   width: 240px;
-  background: var(--sidebar-bg);
+  background: #2f4e4f; /* closer to the UI preview you showed */
   min-height: 100vh;
   padding: 32px 22px;
   display: flex;
   flex-direction: column;
   gap: 28px;
   transition: width .3s ease;
-  position: relative;
-  box-shadow: inset -4px 0 6px rgba(0,0,0,0.08);
 }
 
 /* Collapse to icon-only mode */
@@ -90,44 +89,38 @@ body {
 
 
 .sidebar-item {
-  
-  padding: 12px 14px;
-  width: 100%;
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 15px;
-  font-weight: 600;
+  width: 100%;
+  padding: 12px 14px;
   cursor: pointer;
-  color: white;
-  transition: 0.25s ease;
+  color: #dfece1;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all .25s ease;
+  background: transparent; /* ensures no fallback to black */
 }
 
-/* Hover state — industry style lift */
+/* hover */
 .sidebar-item:hover {
-  background: var(--hover-bg);
-  transform: translateX(6px);
-  border-radius: 18px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+  background: rgba(255,255,255,.10);
+  transform: translateX(5px);
 }
 
-
-/* big item*/
+/* ACTIVE ITEM (green highlight like original screenshot) */
 .sidebar-item.active {
-  background: var(--active-bg);         /* highlight body */
-  border-radius: 18px;
-  padding-right: 100px;        /* push content left so right side touches menu edge */
-  position: relative;
-  z-index: 2;
+  background: none;
+  border-left: 4px solid var(--green);
+  padding-left: 20px;
+  color: var(--green);
 }
-
-
 
 
 
 /* Glow + icon color change */
 .sidebar-item.active svg {
-  stroke: #fff;
+  stroke: var(--green);
 }
 
 

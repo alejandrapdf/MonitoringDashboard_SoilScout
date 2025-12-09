@@ -37,7 +37,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen bg-background text-foreground">
+      <body className="flex h-screen bg-background text-foreground">
 
         {/* Left-side Navigation */}
         <Sidebar />
