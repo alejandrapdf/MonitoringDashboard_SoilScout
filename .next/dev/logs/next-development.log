@@ -32870,3 +32870,153 @@ It can also happen if the client has a browser extension installed which messes 
                               ...
                   ...
 
+[00:30:48.382] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:48.743] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body className="flex h-scr...">
+                            <Sidebar>
+                            <div className="flex flex-...">
+                              <Topbar>
+                                <header
++                                 className={"flex items-center justify-between w-full px-6 py-4\r\n      bg-zinc-100..."}
+-                                 className="flex items-center justify-between w-full px-6 py-4   bg-zinc-100 dark:bg-..."
+                                >
+                                  <h1>
+                                  <div className="flex items...">
+                                    <input
+                                      type="text"
+                                      placeholder="Search..."
++                                     className={"w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zin..."}
+-                                     className="w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-..."
+                                    >
+                                    <div className="relative" ref={{current:null}}>
+                                      <button
+                                        onClick={function Topbar[<button>.onClick]}
++                                       className={"w-9 h-9 rounded-full bg-green-700 text-white font-bold\r\n       ..."}
+-                                       className="w-9 h-9 rounded-full bg-green-700 text-white font-bold   flex items..."
+                                      >
++                                       A
+                              ...
+                  ...
+
+[00:32:12.827] Server  LOG      ✓ Compiled in 177ms
+[00:32:31.249] Server  LOG      ✓ Compiled in 80ms
+[00:32:31.353] Browser ERROR   React has detected a change in the order of Hooks called by %s. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+%s   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ Topbar 1. useState                   useState
+2. useEffect                  useEffect
+3. undefined                  useState
+
+[00:32:31.353] Browser ERROR   uncaughtError: Error: Rendered more hooks than during the previous render.
+[00:33:02.574] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:33:02.603] Server  LOG      ✓ Compiled in 48ms
+[00:33:03.044] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:03.190] Browser WARN    Image with src "/_next/static/media/soilScout.e042b2c7.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:33:03.190] Browser ERROR   React has detected a change in the order of Hooks called by %s. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+%s   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ Topbar 1. useState                   useState
+2. useEffect                  useEffect
+3. undefined                  useState
+
+[00:33:03.190] Browser ERROR   uncaughtError: Error: Rendered more hooks than during the previous render.
+[00:33:05.883] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:33:06.092] Server  LOG      ✓ Compiled in 105ms
+[00:33:06.283] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:06.410] Browser WARN    Image with src "/_next/static/media/soilScout.e042b2c7.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:33:06.411] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body className="flex h-scr...">
+                            <Sidebar>
+                            <div className="flex flex-...">
+                              <Topbar>
+                                <header
++                                 className={"flex items-center justify-between w-full px-6 py-4\r\n      bg-zinc-100..."}
+-                                 className="flex items-center justify-between w-full px-6 py-4   bg-zinc-100 dark:bg-..."
+                                >
+                                  <h1>
+                                  <div className="flex items...">
+                                    <input
+                                      type="text"
+                                      placeholder="Search..."
++                                     className={"w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zin..."}
+-                                     className="w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-..."
+                                    >
+                                    <div className="relative" ref={{current:null}}>
+                                      <button
+                                        onClick={function Topbar[<button>.onClick]}
++                                       className={"w-9 h-9 rounded-full bg-green-700 text-white font-bold\r\n       ..."}
+-                                       className="w-9 h-9 rounded-full bg-green-700 text-white font-bold   flex items..."
+                                      >
++                                       A
+                              ...
+                  ...
+
+[00:33:30.697] Server  LOG      ✓ Compiled in 86ms
+[00:33:41.778] Server  LOG      ✓ Compiled in 73ms
+[00:34:29.900] Server  LOG      ✓ Compiled in 74ms

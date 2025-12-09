@@ -365,10 +365,6 @@
     position: absolute;
   }
 
-  .fixed {
-    position: fixed;
-  }
-
   .relative {
     position: relative;
   }
@@ -592,10 +588,6 @@
 
   .justify-self-end {
     justify-self: flex-end;
-  }
-
-  .overflow-y-auto {
-    overflow-y: auto;
   }
 
   .rounded {

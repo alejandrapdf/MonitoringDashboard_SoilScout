@@ -63,8 +63,7 @@ body {
 }
 
 /* =========================================================
-   SIDEBAR (Older version — may be deprecated soon?)
-   Only keep if legacy layout still used somewhere.
+   SIDEBAR
 ========================================================= */
 
 .sidebar {
@@ -132,7 +131,7 @@ body {
 }
 
 /* =========================================================
-   METRICS UI (Legacy, can be removed if replaced with Tailwind)
+   METRICS UI
 ========================================================= */
 
 .metrics-grid {

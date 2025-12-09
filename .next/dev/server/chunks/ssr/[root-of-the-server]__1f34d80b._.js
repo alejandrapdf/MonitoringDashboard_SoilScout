@@ -260,23 +260,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 function Topbar() {
     /* ==========================================================================
-     THEME STATE + PERSISTENCE
-     --------------------------------------------------------------------------
-     Stores user preference in localStorage so theme persists across reloads.
-     Applies `html.dark` class which allows Tailwind's dark variant styles
-     to update the entire UI without component-level wiring.
-  ========================================================================== */ const [theme, setTheme] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : "light" // SSR-safe fallback
-    );
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        document.documentElement.classList.toggle("dark", theme === "dark");
-        localStorage.setItem("theme", theme);
-    }, [
-        theme
-    ]);
-    const toggleTheme = ()=>{
-        setTheme((prev)=>prev === "dark" ? "light" : "dark");
-    };
-    /* ==========================================================================
      USER DROPDOWN MENU
      --------------------------------------------------------------------------
      - menuOpen controls dropdown visibility
@@ -312,7 +295,7 @@ function Topbar() {
                 children: "Dashboard"
             }, void 0, false, {
                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                lineNumber: 94,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -324,7 +307,7 @@ function Topbar() {
                         className: "w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-sm border border-zinc-300 dark:border-zinc-700   focus:outline-none focus:ring-2 focus:ring-green-500"
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                        lineNumber: 100,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -337,7 +320,7 @@ function Topbar() {
                                 children: "A"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                lineNumber: 110,
+                                lineNumber: 87,
                                 columnNumber: 11
                             }, this),
                             menuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -350,14 +333,14 @@ function Topbar() {
                                                 size: 16
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                lineNumber: 127,
+                                                lineNumber: 104,
                                                 columnNumber: 17
                                             }, this),
                                             " Logout"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                                        lineNumber: 126,
+                                        lineNumber: 103,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -367,7 +350,7 @@ function Topbar() {
                                                 children: "Dark Mode"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                lineNumber: 132,
+                                                lineNumber: 109,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -379,42 +362,42 @@ function Topbar() {
                     ${theme === "dark" ? "translate-x-5" : ""}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                    lineNumber: 138,
+                                                    lineNumber: 115,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                                lineNumber: 133,
+                                                lineNumber: 110,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                                        lineNumber: 131,
+                                        lineNumber: 108,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                lineNumber: 120,
+                                lineNumber: 97,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                        lineNumber: 109,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                lineNumber: 97,
+                lineNumber: 74,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/dashboard/Topbar.js",
-        lineNumber: 87,
+        lineNumber: 64,
         columnNumber: 5
     }, this);
 }

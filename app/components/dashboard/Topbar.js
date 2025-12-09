@@ -14,7 +14,6 @@ import { LogOut } from "lucide-react"; // Lucide icons for UI clarity
 
    UX Intent:
    - Controls grouped right to minimise distraction and improve scan rhythm
-   - Theme persistence gives users a consistent visual experience
    - Dropdown is anchored absolutely to avoid layout shift when opened
 
    Forward Scalability:
@@ -24,28 +23,6 @@ import { LogOut } from "lucide-react"; // Lucide icons for UI clarity
 
 export default function Topbar() {
 
-  /* ==========================================================================
-     THEME STATE + PERSISTENCE
-     --------------------------------------------------------------------------
-     Stores user preference in localStorage so theme persists across reloads.
-     Applies `html.dark` class which allows Tailwind's dark variant styles
-     to update the entire UI without component-level wiring.
-  ========================================================================== */
-
-  const [theme, setTheme] = useState(
-    typeof window !== "undefined"
-      ? localStorage.getItem("theme") || "light"
-      : "light" // SSR-safe fallback
-  );
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(prev => (prev === "dark" ? "light" : "dark"));
-  };
 
 
   /* ==========================================================================
