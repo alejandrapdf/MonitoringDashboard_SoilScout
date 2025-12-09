@@ -103,20 +103,6 @@ export default function Topbar() {
                 <LogOut size={16} /> Logout
               </button>
 
-              {/* Theme Switcher */}
-              <div className="flex items-center justify-between pt-2">
-                <span>Dark Mode</span>
-                <button
-                  onClick={toggleTheme}
-                  className={`w-10 h-5 rounded-full flex items-center p-1 transition
-                  ${theme === "dark" ? "bg-green-600" : "bg-gray-400"}`}
-                >
-                  <div
-                    className={`h-4 w-4 bg-white rounded-full shadow transition-transform
-                    ${theme === "dark" ? "translate-x-5" : ""}`}
-                  />
-                </button>
-              </div>
 
             </div>
           )}
