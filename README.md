@@ -46,7 +46,7 @@ app/
  │   └─ useSensorData.js             → Extract + process mock data
  ├─ lib/data/mockSensorData.js       → Local 7–14 point sensor dataset
  ├─ globals.css                      → Theme + visual system variables
-cypress/e2e/metricSwitch.cy.js       → Verifies chart metric toggle
+cypress/e2e/       → Verifies chart metric toggle
 public/                              → Logos + static assets
 ```
 
