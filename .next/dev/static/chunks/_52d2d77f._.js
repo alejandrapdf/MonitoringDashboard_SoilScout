@@ -401,11 +401,11 @@ var _s = __turbopack_context__.k.signature();
 function Topbar() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(10);
-    if ($[0] !== "9cadbf32f83c4a8521278a742c3fbe5b8f30c57a57a290efe360dcec3b128757") {
+    if ($[0] !== "04bcbf06f8f4c5334987868adcbc855cb528da036e1290c7ffcc09e94adba30b") {
         for(let $i = 0; $i < 10; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "9cadbf32f83c4a8521278a742c3fbe5b8f30c57a57a290efe360dcec3b128757";
+        $[0] = "04bcbf06f8f4c5334987868adcbc855cb528da036e1290c7ffcc09e94adba30b";
     }
     const [menuOpen, setMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const menuRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);

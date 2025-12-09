@@ -53,7 +53,7 @@ export default function Topbar() {
      ┌───────────────────── Left ─────────────────────┐
      │  Page Title                                       │
      │───────────────────────────────────────────────────│
-     │                Search • Avatar • Theme Toggle     │
+     │                Search • Avatar                    │
      └───────────────────── Right ──────────────────────┘
 
      Title first → confirms page context  
