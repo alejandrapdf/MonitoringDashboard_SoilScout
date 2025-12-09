@@ -122,12 +122,50 @@ export default function MetricDisplaySection({ metric }) {
           value={`${max}${metric === "moisture" ? "%" : "°C"}`}
         />
       </div>
-
+  <h3 className="text-xl font-semibold mb-1 text-zinc-200">
+  Trend
+</h3>
       {/* ========= TIME-SERIES TREND CHART ========= */}
-      <div className="mt-6 p-6 rounded-xl bg-[#2B2F31] shadow-sm h-64 flex items-center">
-        <Line data={chartData} options={chartOptions} />
-      </div>
+ <div className="rounded-xl bg-[#2B2F31] shadow-lg h-[420px] p-2 sm:p-4 md:p-6 flex items-center justify-center">
 
+  <Line
+    data={chartData}
+    options={{
+      ...chartOptions,
+      datasets: [
+        {
+          ...chartData.datasets[0],
+          borderWidth: 4,           // THICKER = visually confident
+          pointRadius: 7,           // Each data point stands strong
+          pointHoverRadius: 11,
+          borderColor: "rgb(16,185,129)",  // brighter green (more alive)
+          backgroundColor: "rgba(16,185,129,0.22)",
+        }
+      ],
+      scales: {
+        x: {
+          ticks: { color: "#E5E5E5", font: { size: 14 } },
+          grid: { color: "rgba(255,255,255,0.05)" }
+        },
+        y: {
+          ticks: { color: "#E5E5E5", font: { size: 14 } },
+          grid: { color: "rgba(255,255,255,0.07)" },
+          suggestedMin: min - 2,      // Makes chart breathe vertically
+          suggestedMax: max + 2
+        }
+      },
+      plugins: {
+        legend: {
+          labels: {
+            color: "#fff",
+            padding: 20,
+            font: { weight: "bold", size: 14 }
+          }
+        }
+      }
+    }}
+  />
+</div>
     </section>
   );
 }

@@ -659,12 +659,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$
 // Registered once globally → keeps component clean
 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Chart"].register(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["CategoryScale"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["LinearScale"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["LineElement"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["PointElement"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Tooltip"], __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$dist$2f$chart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Legend"]);
 function MetricDisplaySection(t0) {
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(33);
-    if ($[0] !== "d6f608280f9c8310faeab4bd3a598b977382a446d370355ceab8d0e8eb6f1442") {
-        for(let $i = 0; $i < 33; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(47);
+    if ($[0] !== "14be42a4f1ea26990c121d7bc7e439a22202cb11d33010976c45dc387337f9be") {
+        for(let $i = 0; $i < 47; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "d6f608280f9c8310faeab4bd3a598b977382a446d370355ceab8d0e8eb6f1442";
+        $[0] = "14be42a4f1ea26990c121d7bc7e439a22202cb11d33010976c45dc387337f9be";
     }
     const { metric } = t0;
     let latest;
@@ -849,48 +849,167 @@ function MetricDisplaySection(t0) {
         t16 = $[26];
     }
     let t17;
-    if ($[27] !== chartData || $[28] !== chartOptions) {
-        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "mt-6 p-6 rounded-xl bg-[#2B2F31] shadow-sm h-64 flex items-center",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$chartjs$2d$2$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Line"], {
-                data: chartData,
-                options: chartOptions
-            }, void 0, false, {
-                fileName: "[project]/app/components/dashboard/MetricDisplaySection.js",
-                lineNumber: 186,
-                columnNumber: 94
-            }, this)
+    if ($[27] === Symbol.for("react.memo_cache_sentinel")) {
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+            className: "text-xl font-semibold mb-1 text-zinc-200",
+            children: "Trend"
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/MetricDisplaySection.js",
             lineNumber: 186,
             columnNumber: 11
         }, this);
-        $[27] = chartData;
-        $[28] = chartOptions;
-        $[29] = t17;
+        $[27] = t17;
     } else {
-        t17 = $[29];
+        t17 = $[27];
     }
     let t18;
-    if ($[30] !== t16 || $[31] !== t17) {
-        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+    if ($[28] !== chartData.datasets[0]) {
+        t18 = [
+            {
+                ...chartData.datasets[0],
+                borderWidth: 4,
+                pointRadius: 7,
+                pointHoverRadius: 11,
+                borderColor: "rgb(16,185,129)",
+                backgroundColor: "rgba(16,185,129,0.22)"
+            }
+        ];
+        $[28] = chartData.datasets[0];
+        $[29] = t18;
+    } else {
+        t18 = $[29];
+    }
+    let t19;
+    if ($[30] === Symbol.for("react.memo_cache_sentinel")) {
+        t19 = {
+            ticks: {
+                color: "#E5E5E5",
+                font: {
+                    size: 14
+                }
+            },
+            grid: {
+                color: "rgba(255,255,255,0.05)"
+            }
+        };
+        $[30] = t19;
+    } else {
+        t19 = $[30];
+    }
+    let t20;
+    let t21;
+    if ($[31] === Symbol.for("react.memo_cache_sentinel")) {
+        t20 = {
+            color: "#E5E5E5",
+            font: {
+                size: 14
+            }
+        };
+        t21 = {
+            color: "rgba(255,255,255,0.07)"
+        };
+        $[31] = t20;
+        $[32] = t21;
+    } else {
+        t20 = $[31];
+        t21 = $[32];
+    }
+    const t22 = min - 2;
+    const t23 = max + 2;
+    let t24;
+    if ($[33] !== t22 || $[34] !== t23) {
+        t24 = {
+            x: t19,
+            y: {
+                ticks: t20,
+                grid: t21,
+                suggestedMin: t22,
+                suggestedMax: t23
+            }
+        };
+        $[33] = t22;
+        $[34] = t23;
+        $[35] = t24;
+    } else {
+        t24 = $[35];
+    }
+    let t25;
+    if ($[36] === Symbol.for("react.memo_cache_sentinel")) {
+        t25 = {
+            legend: {
+                labels: {
+                    color: "#fff",
+                    padding: 20,
+                    font: {
+                        weight: "bold",
+                        size: 14
+                    }
+                }
+            }
+        };
+        $[36] = t25;
+    } else {
+        t25 = $[36];
+    }
+    let t26;
+    if ($[37] !== chartOptions || $[38] !== t18 || $[39] !== t24) {
+        t26 = {
+            ...chartOptions,
+            datasets: t18,
+            scales: t24,
+            plugins: t25
+        };
+        $[37] = chartOptions;
+        $[38] = t18;
+        $[39] = t24;
+        $[40] = t26;
+    } else {
+        t26 = $[40];
+    }
+    let t27;
+    if ($[41] !== chartData || $[42] !== t26) {
+        t27 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "rounded-xl bg-[#2B2F31] shadow-lg h-[420px] p-2 sm:p-4 md:p-6 flex items-center justify-center",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$chartjs$2d$2$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Line"], {
+                data: chartData,
+                options: t26
+            }, void 0, false, {
+                fileName: "[project]/app/components/dashboard/MetricDisplaySection.js",
+                lineNumber: 295,
+                columnNumber: 123
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/app/components/dashboard/MetricDisplaySection.js",
+            lineNumber: 295,
+            columnNumber: 11
+        }, this);
+        $[41] = chartData;
+        $[42] = t26;
+        $[43] = t27;
+    } else {
+        t27 = $[43];
+    }
+    let t28;
+    if ($[44] !== t16 || $[45] !== t27) {
+        t28 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
             className: "flex flex-col gap-6",
             children: [
                 t16,
-                t17
+                t17,
+                t27
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/dashboard/MetricDisplaySection.js",
-            lineNumber: 195,
+            lineNumber: 304,
             columnNumber: 11
         }, this);
-        $[30] = t16;
-        $[31] = t17;
-        $[32] = t18;
+        $[44] = t16;
+        $[45] = t27;
+        $[46] = t28;
     } else {
-        t18 = $[32];
+        t28 = $[46];
     }
-    return t18;
+    return t28;
 }
 _c = MetricDisplaySection;
 function _MetricDisplaySectionMockSensorDataMap(d_0) {
@@ -930,11 +1049,11 @@ var _s = __turbopack_context__.k.signature();
 function HomePage() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "4ed0edf58cf0e04458c4a3c78aff99ebc5b6d6bf6222f426d8e325e8f4b81d5b") {
+    if ($[0] !== "219972e57032df764b989255bb1d48534131772bebf89112b9991a2ae662648b") {
         for(let $i = 0; $i < 4; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "4ed0edf58cf0e04458c4a3c78aff99ebc5b6d6bf6222f426d8e325e8f4b81d5b";
+        $[0] = "219972e57032df764b989255bb1d48534131772bebf89112b9991a2ae662648b";
     }
     const [metric, setMetric] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("moisture");
     let t0;

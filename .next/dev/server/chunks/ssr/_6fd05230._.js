@@ -399,20 +399,78 @@ function MetricDisplaySection({ metric }) {
                 lineNumber: 111,
                 columnNumber: 7
             }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                className: "text-xl font-semibold mb-1 text-zinc-200",
+                children: "Trend"
+            }, void 0, false, {
+                fileName: "[project]/app/components/dashboard/MetricDisplaySection.js",
+                lineNumber: 125,
+                columnNumber: 3
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-6 p-6 rounded-xl bg-[#2B2F31] shadow-sm h-64 flex items-center",
+                className: "rounded-xl bg-[#2B2F31] shadow-lg h-[420px] p-2 sm:p-4 md:p-6 flex items-center justify-center",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$chartjs$2d$2$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Line"], {
                     data: chartData,
-                    options: chartOptions
+                    options: {
+                        ...chartOptions,
+                        datasets: [
+                            {
+                                ...chartData.datasets[0],
+                                borderWidth: 4,
+                                pointRadius: 7,
+                                pointHoverRadius: 11,
+                                borderColor: "rgb(16,185,129)",
+                                backgroundColor: "rgba(16,185,129,0.22)"
+                            }
+                        ],
+                        scales: {
+                            x: {
+                                ticks: {
+                                    color: "#E5E5E5",
+                                    font: {
+                                        size: 14
+                                    }
+                                },
+                                grid: {
+                                    color: "rgba(255,255,255,0.05)"
+                                }
+                            },
+                            y: {
+                                ticks: {
+                                    color: "#E5E5E5",
+                                    font: {
+                                        size: 14
+                                    }
+                                },
+                                grid: {
+                                    color: "rgba(255,255,255,0.07)"
+                                },
+                                suggestedMin: min - 2,
+                                suggestedMax: max + 2
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                labels: {
+                                    color: "#fff",
+                                    padding: 20,
+                                    font: {
+                                        weight: "bold",
+                                        size: 14
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }, void 0, false, {
                     fileName: "[project]/app/components/dashboard/MetricDisplaySection.js",
-                    lineNumber: 128,
-                    columnNumber: 9
+                    lineNumber: 131,
+                    columnNumber: 3
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/dashboard/MetricDisplaySection.js",
-                lineNumber: 127,
-                columnNumber: 7
+                lineNumber: 129,
+                columnNumber: 2
             }, this)
         ]
     }, void 0, true, {
@@ -471,7 +529,7 @@ function HomePage() {
                     setMetric: setMetric
                 }, void 0, false, {
                     fileName: "[project]/app/page.js",
-                    lineNumber: 25,
+                    lineNumber: 26,
                     columnNumber: 7
                 }, this)
             ]
