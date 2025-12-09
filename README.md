@@ -1,11 +1,4 @@
-Here is a **professional, polished README**, structured as a real world project handover.
-It's clean, direct, developer-friendly, and much more usable — while matching your codebase design and UX clarity.
-
-I also left a section for you to insert a screenshot preview.
-
----
-
-# 🌱 SoilScout — Site Health Monitoring Dashboard
+## SoilScout — Site Health Monitoring Dashboard
 
 A clean, responsive **Next.js sensor dashboard** designed for clarity, scalability, and modern UI best-practice.
 Visualizes soil moisture + temperature trends, includes responsive chart display, and supports future expansion to real API data streams.
