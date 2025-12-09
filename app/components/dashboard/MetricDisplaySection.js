@@ -1,52 +1,131 @@
 "use client";
 
+/* =============================================================================
+   MetricDisplaySection (UI & UX rationale)
+   -----------------------------------------------------------------------------
+   This component presents sensor readings in a format suited for quick monitoring.
+   The UI is intentionally structured so a user can:
+
+   • Immediately see the latest reading in a large, high-contrast card (high priority)
+   • Compare that reading against minimum + maximum values from the dataset
+   • Visually observe how values trend over time via a line chart
+
+   Data is mocked locally per assignment requirements — but UI is designed so a
+   live API feed can replace mock data later without redesign.
+============================================================================= */
+
 import MetricCard from "./MetricCard";
+import { mockSensorData } from "@/lib/mockSensorData";
+import { Line } from "react-chartjs-2";
 
-/* ============================================================================
-   MetricDisplaySection
-   ---------------------------------------------------------------------------
-   Displays summary metric values (Latest / Min / Max) + dynamic chart area.
-   This component receives the selected metric from the parent (page.js)
-   and updates UI text automatically based on the current metric.
+// Chart.js modules (visual output layer)
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  LineElement,
+  PointElement,
+  Tooltip,
+  Legend
+} from "chart.js";
 
-   NOTE:
-   - Currently shows placeholder values ("--")
-   - Chart container is rendered but not yet data-driven
-   - Next step: inject mock sensor dataset + compute summary values
-============================================================================ */
-export default function MetricDisplaySection({ metric, setMetric }) {
+// Registered once globally → keeps component clean
+ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Tooltip, Legend);
+
+
+export default function MetricDisplaySection({ metric }) {
+
+  /* ---------------------------------------------------------------------------
+     WHY data extraction is done here:
+     - UI needs to update instantly when user toggles Moisture ↔ Temperature
+     - Keeping logic inside this component ties visual changes to selected metric
+  --------------------------------------------------------------------------- */
+  const values = mockSensorData.map(d =>
+    metric === "moisture" ? d.moisture : d.temp
+  );
+
+  /* ---------------------------------------------------------------------------
+     WHY these values matter to the UI:
+     - "Latest" reading represents current field condition → largest + leftmost card
+     - Min/Max tell operator whether conditions have fluctuated dangerously
+     - Values displayed in summary cards allow fast scanning without reading graph
+  --------------------------------------------------------------------------- */
+  const latest = values.at(-1);
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+
+
+  /* ---------------------------------------------------------------------------
+     CHART UI DESIGN DECISIONS:
+     • Single line graph -> reduces visual noise, follows requirement scope
+     • Smooth curves (tension: 0.35) make trend easier to visually follow
+     • Green theme communicates "environmental metric" subconsciously
+     • Dots enabled so each reading is visually discrete → reinforces time-series data
+
+     This visualization complements summary cards by answering: "How are values trending?"
+  --------------------------------------------------------------------------- */
+  const chartData = {
+    labels: mockSensorData.map(d => d.time), // Simple weekday scale = quick readability
+    datasets: [
+      {
+        label: metric === "moisture" ? "Soil Moisture (%)" : "Temperature (°C)",
+        data: values,
+        borderColor: "rgb(34,197,94)",
+        backgroundColor: "rgba(34,197,94,0.4)",
+        tension: 0.35,
+        pointRadius: 4
+      }
+    ]
+  };
+
+  const chartOptions = {
+    responsive: true,
+    plugins: {
+      legend: { labels: { color: "#ddd" } }, // Low-contrast legend so the line stays dominant
+      tooltip: {
+        callbacks: {
+          label: ctx => `${ctx.raw}${metric === "moisture" ? "%" : "°C"}`
+        }
+      }
+    },
+    scales: {
+      // Muted axis ticks keep attention on the trend line instead of grid
+      x: { ticks: { color: "#ccc" } },
+      y: { ticks: { color: "#ccc" } }
+    }
+  };
+
+
+  /* =============================================================================
+     UI Layout Summary
+     -----------------------------------------------------------------------------
+     - Metric summary cards appear ABOVE the chart because humans scan numbers first
+     - Three-card grid → balanced layout, symmetric, digestible
+     - Chart sits in a dark rounded container, giving clear visual separation
+     - Component spacing (gap-6) increases readability and reduces cognitive load
+============================================================================= */
   return (
     <section className="flex flex-col gap-6">
 
-      {/* ==================================================================
-         Metric Summary Cards
-         ------------------------------------------------------------------
-         These reflect currently selected metric (moisture/temperature)
-         Values are placeholders — will map to derived data next phase.
-      ================================================================== */}
+      {/* ========= SUMMARY CARDS ========= */}
       <div className="grid sm:grid-cols-3 gap-6 mt-3 ">
         <MetricCard
           label={`Latest ${metric === "moisture" ? "Soil Moisture" : "Temperature"}`}
-          value="--" // to be populated from dataset
+          value={`${latest}${metric === "moisture" ? "%" : "°C"}`}
         />
-        <MetricCard label="Minimum" value="--" />
-        <MetricCard label="Maximum" value="--" />
+        <MetricCard
+          label="Minimum"
+          value={`${min}${metric === "moisture" ? "%" : "°C"}`}
+        />
+        <MetricCard
+          label="Maximum"
+          value={`${max}${metric === "moisture" ? "%" : "°C"}`}
+        />
       </div>
 
-      {/* ==================================================================
-         Chart Display Area
-         ------------------------------------------------------------------
-         Placeholder UI only — reacts to metric toggle via text label.
-         Will later be replaced with <SensorChart data={...} metric={metric} />
-         using Recharts/Chart.js once dataset is implemented.
-      ================================================================== */}
-      <div className="mt-6 p-6 rounded-xl bg-[#2B2F31] shadow-sm flex items-center justify-center h-64">
-        <p className="text-gray-500 text-lg text-center">
-          📊 {metric === "moisture" ? "Soil Moisture Chart" : "Temperature Chart"}
-          <span className="block text-sm opacity-70">
-            (chart renders here once data + logic added)
-          </span>
-        </p>
+      {/* ========= TIME-SERIES TREND CHART ========= */}
+      <div className="mt-6 p-6 rounded-xl bg-[#2B2F31] shadow-sm h-64 flex items-center">
+        <Line data={chartData} options={chartOptions} />
       </div>
 
     </section>
