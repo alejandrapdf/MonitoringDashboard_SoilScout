@@ -117,9 +117,7 @@ export default function Topbar() {
             text-sm space-y-2 z-50">
 
               {/* Menu Options */}
-              <button className="w-full flex items-center gap-2 p-2 text-left hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded">
-                <LogIn size={16} /> Login
-              </button>
+            
 
               <button className="w-full flex items-center gap-2 p-2 text-left hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded">
                 <LogOut size={16} /> Logout
