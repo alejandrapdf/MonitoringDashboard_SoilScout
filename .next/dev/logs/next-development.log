@@ -779,3 +779,1885 @@ It can also happen if the client has a browser extension installed which messes 
                               ...
                   ...
 
+[00:23:34.043] Server  LOG      ✓ Compiled in 209ms
+[00:23:34.138] Browser ERROR   uncaughtError: ReferenceError: SidebarItem is not defined
+[00:23:36.805] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:23:36.819] Server  LOG      ✓ Compiled in 188ms
+[00:23:37.366] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:37.532] Browser WARN    Image with src "/_next/static/media/soilScout.e042b2c7.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:23:37.532] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body className="bg-black f...">
+                            <Sidebar>
+                            <div className="flex flex-...">
+                              <Topbar>
+                                <header
++                                 className={"flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 da..."}
+-                                 className="flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 dark..."
+                                >
+                                  <h1>
+                                  <div className="flex items...">
+                                    <input
+                                      type="text"
+                                      placeholder="Search..."
++                                     className={"w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zin..."}
+-                                     className="w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-..."
+                                    >
+                                    <div className="relative" ref={{current:null}}>
+                                      <button
+                                        onClick={function Topbar[<button>.onClick]}
++                                       className={"w-9 h-9 rounded-full bg-green-700 text-white font-bold\r\n       ..."}
+-                                       className="w-9 h-9 rounded-full bg-green-700 text-white font-bold   flex items..."
+                                      >
++                                       A
+                              ...
+                  ...
+
+[00:23:53.581] Server  LOG      ✓ Compiled in 254ms
+[00:23:56.635] Server  LOG      ✓ Compiled in 298ms
+[00:28:23.814] Server  LOG      ✓ Compiled in 292ms
+[00:32:05.625] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:06.279] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body className="bg-black f...">
+                            <Sidebar>
+                            <div className="flex flex-...">
+                              <Topbar>
+                                <header
++                                 className={"flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 da..."}
+-                                 className="flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 dark..."
+                                >
+                                  <h1>
+                                  <div className="flex items...">
+                                    <input
+                                      type="text"
+                                      placeholder="Search..."
++                                     className={"w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zin..."}
+-                                     className="w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-..."
+                                    >
+                                    <div className="relative" ref={{current:null}}>
+                                      <button
+                                        onClick={function Topbar[<button>.onClick]}
++                                       className={"w-9 h-9 rounded-full bg-green-700 text-white font-bold\r\n       ..."}
+-                                       className="w-9 h-9 rounded-full bg-green-700 text-white font-bold   flex items..."
+                                      >
++                                       A
+                              ...
+                  ...
+
+[00:32:06.363] Browser WARN    Image with src "/_next/static/media/soilLogo.347747d8.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:37:58.623] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:58.630] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:58.638] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:58.655] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:58.736] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:58.799] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:58.804] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:58.806] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:37:58.895] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:00.963] Browser ERROR   ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:00.963] Browser ERROR   ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:00.963] Browser ERROR   ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:00.963] Browser ERROR   ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:04.335] Browser ERROR   ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:04.335] Browser ERROR   ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:04.335] Browser ERROR   ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:04.335] Browser ERROR   uncaughtError: Error: ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:38:04.335] Browser ERROR   ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:04.335] Browser ERROR   ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/soilLogo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/soilLogo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:38:13.985] Server  LOG      ✓ Compiled in 90ms
+[00:38:14.879] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:15.810] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body className="bg-black f...">
+                            <Sidebar>
+                            <div className="flex flex-...">
+                              <Topbar>
+                                <header
++                                 className={"flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 da..."}
+-                                 className="flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 dark..."
+                                >
+                                  <h1>
+                                  <div className="flex items...">
+                                    <input
+                                      type="text"
+                                      placeholder="Search..."
++                                     className={"w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zin..."}
+-                                     className="w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-..."
+                                    >
+                                    <div className="relative" ref={{current:null}}>
+                                      <button
+                                        onClick={function Topbar[<button>.onClick]}
++                                       className={"w-9 h-9 rounded-full bg-green-700 text-white font-bold\r\n       ..."}
+-                                       className="w-9 h-9 rounded-full bg-green-700 text-white font-bold   flex items..."
+                                      >
++                                       A
+                              ...
+                  ...
+
+[00:38:16.500] Browser WARN    Image with src "/_next/static/media/soilLogo.2c0577af.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:43:15.475] Server  LOG      ✓ Compiled in 105ms
+[00:43:15.854] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:16.736] Browser WARN    Image with src "/_next/static/media/logo.87703bb0.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:43:16.736] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body className="bg-black f...">
+                            <Sidebar>
+                            <div className="flex flex-...">
+                              <Topbar>
+                                <header
++                                 className={"flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 da..."}
+-                                 className="flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 dark..."
+                                >
+                                  <h1>
+                                  <div className="flex items...">
+                                    <input
+                                      type="text"
+                                      placeholder="Search..."
++                                     className={"w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zin..."}
+-                                     className="w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-..."
+                                    >
+                                    <div className="relative" ref={{current:null}}>
+                                      <button
+                                        onClick={function Topbar[<button>.onClick]}
++                                       className={"w-9 h-9 rounded-full bg-green-700 text-white font-bold\r\n       ..."}
+-                                       className="w-9 h-9 rounded-full bg-green-700 text-white font-bold   flex items..."
+                                      >
++                                       A
+                              ...
+                  ...
+
+[00:44:38.513] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.517] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.526] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.529] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.556] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.560] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.564] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.567] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.570] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.573] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.575] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.578] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.581] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.584] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.586] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.588] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.593] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.595] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.597] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.599] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.602] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.604] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.606] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.608] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.612] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.614] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.617] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.619] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.622] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.625] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.627] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.630] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:44:38.632] Server  LOG      ✓ Compiled in 218ms
+[00:44:38.741] Browser ERROR   ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:44:42.620] Browser ERROR   ./app/components/dashboard/Sidebar.js:12:1
+Module not found: Can't resolve '../../../public/logo.png'
+  10 |
+  11 | // Brand assets
+> 12 | import logo from "../../../public/logo.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import smallLogo from "../../../public/icon.png";
+  14 |
+  15 | /* =============================================================================
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:44:48.855] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:49.008] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body className="bg-black f...">
+                            <Sidebar>
+                            <div className="flex flex-...">
+                              <Topbar>
+                                <header
++                                 className={"flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 da..."}
+-                                 className="flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 dark..."
+                                >
+                                  <h1>
+                                  <div className="flex items...">
+                                    <input
+                                      type="text"
+                                      placeholder="Search..."
++                                     className={"w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zin..."}
+-                                     className="w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-..."
+                                    >
+                                    <div className="relative" ref={{current:null}}>
+                                      <button
+                                        onClick={function Topbar[<button>.onClick]}
++                                       className={"w-9 h-9 rounded-full bg-green-700 text-white font-bold\r\n       ..."}
+-                                       className="w-9 h-9 rounded-full bg-green-700 text-white font-bold   flex items..."
+                                      >
++                                       A
+                              ...
+                  ...
+
+[00:45:31.132] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.143] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.202] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.205] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.300] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.302] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.305] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.307] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.310] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.313] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.316] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.319] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.322] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.323] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.327] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.330] Server  ERROR    ⨯ ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:31.337] Server  LOG      ✓ Compiled in 357ms
+[00:45:31.457] Browser ERROR   ./app/components/dashboard/Sidebar.js:13:1
+Module not found: Can't resolve '../../../public/icon.png'
+  11 | // Brand assets
+  12 | import logo from "../../../public/logo.png";
+> 13 | import smallLogo from "../../../public/icon.png";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | /* =============================================================================
+  16 |    <Sidebar />
+
+Import trace:
+  Server Component:
+    ./app/components/dashboard/Sidebar.js
+    ./app/layout.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:36.336] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:36.552] Browser WARN    Image with src "/_next/static/media/logo.1b3197b6.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:45:36.552] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body className="bg-black f...">
+                            <Sidebar>
+                            <div className="flex flex-...">
+                              <Topbar>
+                                <header
++                                 className={"flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 da..."}
+-                                 className="flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 dark..."
+                                >
+                                  <h1>
+                                  <div className="flex items...">
+                                    <input
+                                      type="text"
+                                      placeholder="Search..."
++                                     className={"w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zin..."}
+-                                     className="w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-..."
+                                    >
+                                    <div className="relative" ref={{current:null}}>
+                                      <button
+                                        onClick={function Topbar[<button>.onClick]}
++                                       className={"w-9 h-9 rounded-full bg-green-700 text-white font-bold\r\n       ..."}
+-                                       className="w-9 h-9 rounded-full bg-green-700 text-white font-bold   flex items..."
+                                      >
++                                       A
+                              ...
+                  ...
+
+[00:45:42.197] Server  LOG      ✓ Compiled in 785ms
+[00:45:56.196] Server  LOG      ✓ Compiled in 469ms
+[00:46:01.856] Server  LOG      ✓ Compiled in 798ms
+[00:46:02.635] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:02.856] Browser WARN    Image with src "/_next/static/media/logo.1b3197b6.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:46:02.857] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body className="bg-black f...">
+                            <Sidebar>
+                            <div className="flex flex-...">
+                              <Topbar>
+                                <header
++                                 className={"flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 da..."}
+-                                 className="flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 dark..."
+                                >
+                                  <h1>
+                                  <div className="flex items...">
+                                    <input
+                                      type="text"
+                                      placeholder="Search..."
++                                     className={"w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zin..."}
+-                                     className="w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-..."
+                                    >
+                                    <div className="relative" ref={{current:null}}>
+                                      <button
+                                        onClick={function Topbar[<button>.onClick]}
++                                       className={"w-9 h-9 rounded-full bg-green-700 text-white font-bold\r\n       ..."}
+-                                       className="w-9 h-9 rounded-full bg-green-700 text-white font-bold   flex items..."
+                                      >
++                                       A
+                              ...
+                  ...
+
+[00:46:06.441] Server  LOG      ✓ Compiled in 644ms
+[00:48:10.731] Server  LOG      ✓ Compiled in 158ms
+[00:48:30.170] Server  LOG      ✓ Compiled in 118ms
+[00:48:58.060] Server  LOG      ✓ Compiled in 94ms
+[00:49:07.908] Server  LOG      ✓ Compiled in 99ms
+[00:49:17.415] Server  LOG      ✓ Compiled in 155ms
+[00:49:44.243] Server  LOG      ✓ Compiled in 175ms
+[00:49:47.133] Server  LOG      ✓ Compiled in 203ms
+[00:50:10.949] Server  LOG      ✓ Compiled in 141ms
+[00:51:13.335] Server  LOG      ✓ Compiled in 521ms
+[00:51:40.859] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:41.004] Browser WARN    Image with src "/_next/static/media/logo.1b3197b6.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:51:41.004] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body className="bg-black f...">
+                            <Sidebar>
+                            <div className="flex flex-...">
+                              <Topbar>
+                                <header
++                                 className={"flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 da..."}
+-                                 className="flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 dark..."
+                                >
+                                  <h1>
+                                  <div className="flex items...">
+                                    <input
+                                      type="text"
+                                      placeholder="Search..."
++                                     className={"w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zin..."}
+-                                     className="w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-..."
+                                    >
+                                    <div className="relative" ref={{current:null}}>
+                                      <button
+                                        onClick={function Topbar[<button>.onClick]}
++                                       className={"w-9 h-9 rounded-full bg-green-700 text-white font-bold\r\n       ..."}
+-                                       className="w-9 h-9 rounded-full bg-green-700 text-white font-bold   flex items..."
+                                      >
++                                       A
+                              ...
+                  ...
+
+[00:52:09.767] Server  LOG      ✓ Compiled in 180ms
+[00:52:46.040] Server  LOG      ✓ Compiled in 90ms
+[00:53:12.902] Server  LOG      ✓ Compiled in 111ms
+[00:53:44.032] Server  LOG      ✓ Compiled in 161ms
+[00:54:27.237] Server  LOG      ✓ Compiled in 111ms
+[00:54:28.708] Server  LOG      ✓ Compiled in 330ms
+[00:54:30.546] Server  LOG      ✓ Compiled in 60ms

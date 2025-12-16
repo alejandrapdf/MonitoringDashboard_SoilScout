@@ -105,29 +105,18 @@ function Sidebar() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center justify-center py-6",
-                children: [
-                    !collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$soilScout$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$soilScout$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-                        alt: "SoilScout logo",
-                        width: 130
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 51,
-                        columnNumber: 24
-                    }, this),
-                    collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$icon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$icon$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-                        alt: "SoilScout icon",
-                        width: 42
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 52,
-                        columnNumber: 23
-                    }, this)
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$soilScout$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$soilScout$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                    alt: "SoilScout logo",
+                    width: 130
+                }, void 0, false, {
+                    fileName: "[project]/app/components/dashboard/Sidebar.js",
+                    lineNumber: 50,
+                    columnNumber: 7
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/app/components/dashboard/Sidebar.js",
-                lineNumber: 50,
+                lineNumber: 49,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -139,7 +128,7 @@ function Sidebar() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Sidebar.js",
-                            lineNumber: 57,
+                            lineNumber: 55,
                             columnNumber: 46
                         }, void 0),
                         label: "Dashboard",
@@ -147,7 +136,7 @@ function Sidebar() {
                         pathname: pathname
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 57,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
@@ -156,7 +145,7 @@ function Sidebar() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Sidebar.js",
-                            lineNumber: 58,
+                            lineNumber: 56,
                             columnNumber: 47
                         }, void 0),
                         label: "Sensors",
@@ -164,7 +153,7 @@ function Sidebar() {
                         pathname: pathname
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 58,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
@@ -173,7 +162,7 @@ function Sidebar() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Sidebar.js",
-                            lineNumber: 59,
+                            lineNumber: 57,
                             columnNumber: 47
                         }, void 0),
                         label: "Map",
@@ -181,13 +170,13 @@ function Sidebar() {
                         pathname: pathname
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 59,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/dashboard/Sidebar.js",
-                lineNumber: 56,
+                lineNumber: 54,
                 columnNumber: 7
             }, this)
         ]
@@ -227,19 +216,19 @@ function Sidebar() {
                     children: label
                 }, void 0, false, {
                     fileName: "[project]/app/components/dashboard/Sidebar.js",
-                    lineNumber: 94,
+                    lineNumber: 92,
                     columnNumber: 24
                 }, this),
                 " "
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 86,
+            lineNumber: 84,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/dashboard/Sidebar.js",
-        lineNumber: 85,
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }

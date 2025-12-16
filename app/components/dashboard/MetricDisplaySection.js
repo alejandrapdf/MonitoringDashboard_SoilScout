@@ -61,7 +61,7 @@ export default function MetricDisplaySection({ metric }) {
     labels: formattedDates,
     datasets: [
       {
-        label: metric === "moisture" ? "Soil Moisture (%)" : "Temperature (°C)",
+        label: metric === "moisture" ? "Moisture (%)" : "Temperature (°C)",
         data: values,
         borderColor: "rgb(34,197,94)",
         backgroundColor: "rgba(34,197,94,0.4)",
@@ -103,7 +103,7 @@ export default function MetricDisplaySection({ metric }) {
       <div className="grid sm:grid-cols-3 gap-6 mt-3" data-cy="metric-cards">
 
         <MetricCard
-          label={`Latest ${metric === "moisture" ? "Soil Moisture" : "Temperature"}`}
+          label={`Latest ${metric === "moisture" ? "Moisture" : "Temperature"}`}
           value={`${latest}${metric === "moisture" ? "%" : "°C"}`}
         />
 

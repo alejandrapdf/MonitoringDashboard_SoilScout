@@ -617,6 +617,18 @@
     border-color: var(--color-zinc-300);
   }
 
+  .bg-\[\#0B1F33\] {
+    background-color: #0b1f33;
+  }
+
+  .bg-\[\#0B4F8A\] {
+    background-color: #0b4f8a;
+  }
+
+  .bg-\[\#1F6F3A\] {
+    background-color: #1f6f3a;
+  }
+
   .bg-\[\#2B2F31\] {
     background-color: #2b2f31;
   }

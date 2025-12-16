@@ -43,7 +43,7 @@ export default function MetricToggle({ metric, setMetric }) {
               }
             `}
           >
-            {m === "moisture" ? "Soil Moisture" : "Temperature"}
+            {m === "moisture" ? "Moisture" : "Temperature"}
           </button>
         );
       })}

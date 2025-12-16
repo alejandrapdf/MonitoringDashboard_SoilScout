@@ -61,7 +61,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cpu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Cpu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/cpu.js [app-ssr] (ecmascript) <export default as Cpu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Map$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map.js [app-ssr] (ecmascript) <export default as Map>");
 (()=>{
-    const e = new Error("Cannot find module '../../public/soilScout.png'");
+    const e = new Error("Cannot find module '../../../public/logo.png'");
     e.code = 'MODULE_NOT_FOUND';
     throw e;
 })();
@@ -80,45 +80,25 @@ function Sidebar() {
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
         className: `
-    flex flex-col min-h-screen bg-[var(--sidebar-bg)] transition-all duration-300
-    ${collapsed ? "w-20" : "w-60"} h-screen shadow-inner
-  `,
+        flex flex-col min-h-screen bg-[#2F4F4F]
+        transition-all duration-300 shadow-inner h-screen
+        ${collapsed ? "w-20" : "w-60"}
+      `,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center justify-center py-6",
-                children: [
-                    !collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        src: logo,
-                        alt: "SoilScout Logo",
-                        width: 130
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 47,
-                        columnNumber: 24
-                    }, this),
-                    collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$icon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$icon$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-                        alt: "SoilScout Compact Logo",
-                        width: 42
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 48,
-                        columnNumber: 23
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/components/dashboard/Sidebar.js",
-                lineNumber: 46,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                onClick: ()=>setCollapsed(!collapsed),
-                className: "mx-auto mb-6 rounded-full border border-zinc-700 px-2 py-1 text-xs hover:bg-zinc-800 transition",
-                "aria-label": "Toggle sidebar",
-                children: collapsed ? ">" : "<"
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                    src: logo,
+                    alt: "SoilScout logo",
+                    width: 130
+                }, void 0, false, {
+                    fileName: "[project]/app/components/dashboard/Sidebar.js",
+                    lineNumber: 50,
+                    columnNumber: 7
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/dashboard/Sidebar.js",
-                lineNumber: 52,
+                lineNumber: 49,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -130,15 +110,15 @@ function Sidebar() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Sidebar.js",
-                            lineNumber: 62,
-                            columnNumber: 37
+                            lineNumber: 55,
+                            columnNumber: 46
                         }, void 0),
                         label: "Dashboard",
                         collapsed: collapsed,
                         pathname: pathname
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 62,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
@@ -147,15 +127,15 @@ function Sidebar() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Sidebar.js",
-                            lineNumber: 63,
+                            lineNumber: 56,
                             columnNumber: 47
                         }, void 0),
-                        label: "2Page",
+                        label: "Sensors",
                         collapsed: collapsed,
                         pathname: pathname
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 63,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
@@ -164,48 +144,54 @@ function Sidebar() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/components/dashboard/Sidebar.js",
-                            lineNumber: 64,
+                            lineNumber: 57,
                             columnNumber: 47
                         }, void 0),
-                        label: "Third Page",
+                        label: "Map",
                         collapsed: collapsed,
                         pathname: pathname
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Sidebar.js",
-                        lineNumber: 64,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/dashboard/Sidebar.js",
-                lineNumber: 61,
+                lineNumber: 54,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/dashboard/Sidebar.js",
-        lineNumber: 38,
+        lineNumber: 41,
         columnNumber: 5
     }, this);
 }
-/**
- * =============================================================================
- * <SidebarItem />
- * Reusable navigation item with dynamic active state.
- *
- * Objectively better than static <button> because:
- * • It scales cleanly for new items
- * • Route-based highlight improves spatial awareness
- * • Collapsed mode preserves icon context
- * =============================================================================
- */ function SidebarItem({ icon, label, collapsed, href, pathname }) {
+/* =============================================================================
+   <SidebarItem />
+   -----------------------------------------------------------------------------
+   Single navigation entry.
+
+   Behavioral Details:
+   • Highlights when the current route matches `href`
+   • Supports compact mode by hiding label but retaining icon
+   • Click target remains large enough for easy interaction
+
+   Why this abstraction matters:
+   - Enables scalable navigation without repeated markup
+   - Keeps active state styling consistent across all links
+   - Works cleanly with new items or nested routes later
+============================================================================= */ function SidebarItem({ icon, label, collapsed, href, pathname }) {
     const isActive = pathname === href;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
         href: href,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: `flex items-center gap-3 cursor-pointer rounded-md px-3 py-2 text-sm font-medium
-        transition hover:bg-zinc-800
-        ${isActive ? "bg-zinc-800 text-green-300" : "text-zinc-300"}`,
+            className: `
+          flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-md cursor-pointer
+          transition hover:bg-zinc-800
+          ${isActive ? "bg-zinc-800 text-green-300" : "text-zinc-300"}
+        `,
             children: [
                 icon,
                 !collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -214,16 +200,17 @@ function Sidebar() {
                     fileName: "[project]/app/components/dashboard/Sidebar.js",
                     lineNumber: 92,
                     columnNumber: 24
-                }, this)
+                }, this),
+                " "
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 86,
+            lineNumber: 84,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/dashboard/Sidebar.js",
-        lineNumber: 85,
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }
@@ -237,74 +224,107 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-out.js [app-ssr] (ecmascript) <export default as LogOut>"); // Lucide icons for UI clarity
 "use client";
 ;
 ;
+;
 function Topbar() {
-    const [theme, setTheme] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("default");
-    // Restore saved theme preference on mount
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const saved = localStorage.getItem("theme") || "default";
-        setTheme(saved);
-        document.documentElement.setAttribute("data-theme", saved);
-    }, []);
-    const toggleTheme = ()=>{
-        const next = theme === "accessible" ? "default" : "accessible";
-        setTheme(next);
-        document.documentElement.setAttribute("data-theme", next);
-        localStorage.setItem("theme", next);
-    };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: "flex items-center justify-between w-full px-6 py-4   bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50   border-b border-zinc-200 dark:border-zinc-800",
+    /* ==========================================================================
+     USER DROPDOWN MENU
+     --------------------------------------------------------------------------
+     - menuOpen controls dropdown visibility
+     - Click-outside behavior auto-closes panel
+     - Future space for authentication controls and settings
+  ========================================================================== */ const [menuOpen, setMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const menuRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    /* ==========================================================================
+     UI LAYOUT STRUCTURE
+     --------------------------------------------------------------------------
+     ┌───────────────────── Left ─────────────────────┐
+     │  Page Title                                       │
+     │───────────────────────────────────────────────────│
+     │                Search • Avatar                    │
+     └───────────────────── Right ──────────────────────┘
+
+     Title first → confirms page context  
+     Tools aligned right → predictable, efficient interaction cluster  
+  ========================================================================== */ return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+        className: "flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50   border-b border-zinc-200 dark:border-zinc-800",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                 className: "text-xl font-semibold tracking-tight",
                 children: "Dashboard"
             }, void 0, false, {
                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                lineNumber: 44,
+                lineNumber: 61,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                onClick: toggleTheme,
-                "aria-label": "Toggle accessibility theme",
-                className: "flex items-center gap-2 cursor-pointer select-none",
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex items-center gap-4",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-lg",
-                        children: "👁️"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        type: "text",
+                        placeholder: "Search...",
+                        className: "w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-sm border border-zinc-300 dark:border-zinc-700   focus:outline-none focus:ring-2 focus:ring-green-500"
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                        lineNumber: 53,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `relative w-11 h-6 rounded-full transition-colors duration-300
-          ${theme === "accessible" ? "bg-blue-600" : "bg-gray-400"}`,
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: `absolute top-[2px] h-5 w-5 rounded-full bg-white shadow
-            transition-transform duration-300
-            ${theme === "accessible" ? "translate-x-5" : "translate-x-0"}`
-                        }, void 0, false, {
-                            fileName: "[project]/app/components/dashboard/Topbar.js",
-                            lineNumber: 61,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
+                        className: "relative",
+                        ref: menuRef,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>setMenuOpen((v)=>!v),
+                                className: "w-9 h-9 rounded-full bg-green-700 text-white font-bold   flex items-center justify-center uppercase",
+                                children: "A"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/dashboard/Topbar.js",
+                                lineNumber: 77,
+                                columnNumber: 11
+                            }, this),
+                            menuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute right-0 mt-2 w-48 bg-white dark:bg-zinc-800   border border-zinc-300 dark:border-zinc-700 rounded-md shadow-lg p-3   text-sm space-y-2 z-50",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: "w-full flex items-center gap-2 p-2 text-left hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
+                                            size: 16
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/components/dashboard/Topbar.js",
+                                            lineNumber: 94,
+                                            columnNumber: 17
+                                        }, this),
+                                        " Logout"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/components/dashboard/Topbar.js",
+                                    lineNumber: 93,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/dashboard/Topbar.js",
+                                lineNumber: 87,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                        lineNumber: 56,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                lineNumber: 47,
+                lineNumber: 64,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/dashboard/Topbar.js",
-        lineNumber: 38,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 }

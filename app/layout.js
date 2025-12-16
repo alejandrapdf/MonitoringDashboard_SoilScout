@@ -29,7 +29,7 @@ import Sidebar from "./components/dashboard/Sidebar";
 import Topbar from "./components/dashboard/Topbar";
 
 export const metadata = {
-  title: "Soil Monitoring Dashboard",
+  title: "Air Monitoring Dashboard",
   description: "Live system monitoring interface",
 };
 

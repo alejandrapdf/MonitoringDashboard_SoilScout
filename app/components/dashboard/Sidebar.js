@@ -9,8 +9,7 @@ import Link from "next/link";
 import { Home, Cpu, Map } from "lucide-react";
 
 // Brand assets
-import logo from "../../../public/soilScout.png";
-import smallLogo from "../../../public/icon.png";
+import logo from "../../../public/logo.png";
 
 /* =============================================================================
    <Sidebar />
@@ -46,11 +45,9 @@ export default function Sidebar() {
       `}
     >
 
-      {/* Logo adjusts based on space — avoids awkward scaling */}
       <div className="flex items-center justify-center py-6">
-        {!collapsed && <Image src={logo} alt="SoilScout logo" width={130} />}
-        {collapsed && <Image src={smallLogo} alt="SoilScout icon" width={42} />}
-      </div>
+      <Image src={logo} alt="logo" width={130} />
+     </div>
 
       {/* Navigation */}
       <nav className="flex flex-col gap-2 px-3">

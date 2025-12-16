@@ -37,7 +37,7 @@ describe("Critical Flow Test – Metric Switching", () => {
     cy.contains("Temperature").click();
 
     cy.contains("Latest Temperature").should("be.visible");        // new data rendered
-    cy.contains("Latest Soil Moisture").should("not.exist");       // old metric removed
+    cy.contains("Latest Moisture").should("not.exist");       // old metric removed
     cy.get("canvas").should("be.visible");                         // chart persists correctly
 
     // Layout sanity check — summary card count must remain unchanged.
@@ -47,9 +47,9 @@ describe("Critical Flow Test – Metric Switching", () => {
        Confirms toggle is fully reversible — a crucial UX expectation.
        Ensures app is dynamic rather than one-way state bound.
     ========================================================================== */
-    cy.contains("Soil Moisture").click();
+    cy.contains("Moisture").click();
 
-    cy.contains("Latest Soil Moisture").should("be.visible");      // reverted successfully
+    cy.contains("Latest Moisture").should("be.visible");      // reverted successfully
     cy.contains("Latest Temperature").should("not.exist");         // no residual state
     cy.get("canvas").should("be.visible");                         // render integrity intact
 

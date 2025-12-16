@@ -33,11 +33,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function MetricToggle(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "89e245df5afb686c4654c0a6f7c838ed2e69ffec03fecc8d778bba29b7205a94") {
+    if ($[0] !== "bbd4a9a5035d14c052eaa219373aeeb66b30721385f8e06d43f502941e4cbd0e") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "89e245df5afb686c4654c0a6f7c838ed2e69ffec03fecc8d778bba29b7205a94";
+        $[0] = "bbd4a9a5035d14c052eaa219373aeeb66b30721385f8e06d43f502941e4cbd0e";
     }
     const { metric, setMetric } = t0;
     let t1;
@@ -68,7 +68,7 @@ function MetricToggle(t0) {
               border
               ${active ? "bg-[#2e2e2e] text-[#8FFFA2] border-[#72e06a] shadow-sm" : "bg-transparent text-gray-300 border-gray-500 hover:text-white hover:border-gray-300"}
             `,
-                        children: m === "moisture" ? "Soil Moisture" : "Temperature"
+                        children: m === "moisture" ? "Moisture" : "Temperature"
                     }, m, false, {
                         fileName: "[project]/app/components/dashboard/MetricToggle.js",
                         lineNumber: 49,
@@ -499,11 +499,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$dashboa
 ;
 function MetricCard(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "8d68605af133ea9ac97c4cec6121d8277b95fe8cc603f21e61f13c22e5220939") {
+    if ($[0] !== "1cc96f1687599797770ef5ba924dc66c093c907082ce91983b7615ff2736e750") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "8d68605af133ea9ac97c4cec6121d8277b95fe8cc603f21e61f13c22e5220939";
+        $[0] = "1cc96f1687599797770ef5ba924dc66c093c907082ce91983b7615ff2736e750";
     }
     const { label, value, critical } = t0;
     const t1 = `
@@ -523,12 +523,12 @@ function MetricCard(t0) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/dashboard/MetricCard.js",
-                lineNumber: 46,
+                lineNumber: 43,
                 columnNumber: 22
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/MetricCard.js",
-            lineNumber: 46,
+            lineNumber: 43,
             columnNumber: 10
         }, this);
         $[1] = label;
@@ -547,12 +547,12 @@ function MetricCard(t0) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/dashboard/MetricCard.js",
-                lineNumber: 54,
+                lineNumber: 51,
                 columnNumber: 23
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/MetricCard.js",
-            lineNumber: 54,
+            lineNumber: 51,
             columnNumber: 10
         }, this);
         $[3] = value;
@@ -570,7 +570,7 @@ function MetricCard(t0) {
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/dashboard/MetricCard.js",
-            lineNumber: 62,
+            lineNumber: 59,
             columnNumber: 10
         }, this);
         $[5] = t1;
@@ -776,11 +776,11 @@ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$chart$2e$js$2f$d
 function MetricDisplaySection(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(42);
-    if ($[0] !== "9cc3c746c038065a753bcbdd8104a414fa3041e3c669af819bca56723332dd66") {
+    if ($[0] !== "38af17d15fbf406279bd76ab470f814a1552b57b0150a193c9e1ee42047e0727") {
         for(let $i = 0; $i < 42; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "9cc3c746c038065a753bcbdd8104a414fa3041e3c669af819bca56723332dd66";
+        $[0] = "38af17d15fbf406279bd76ab470f814a1552b57b0150a193c9e1ee42047e0727";
     }
     const { metric } = t0;
     const { values, latest, min, max } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$hooks$2f$useSensorData$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSensorData"])(metric);
@@ -792,7 +792,7 @@ function MetricDisplaySection(t0) {
         t1 = $[1];
     }
     const formattedDates = t1;
-    const t2 = metric === "moisture" ? "Soil Moisture (%)" : "Temperature (\xB0C)";
+    const t2 = metric === "moisture" ? "Moisture (%)" : "Temperature (\xB0C)";
     let t3;
     if ($[2] !== t2 || $[3] !== values) {
         t3 = {
@@ -872,7 +872,7 @@ function MetricDisplaySection(t0) {
         t7 = $[10];
     }
     const chartOptions = t7;
-    const t8 = `Latest ${metric === "moisture" ? "Soil Moisture" : "Temperature"}`;
+    const t8 = `Latest ${metric === "moisture" ? "Moisture" : "Temperature"}`;
     const t9 = `${latest}${metric === "moisture" ? "%" : "\xB0C"}`;
     let t10;
     if ($[11] !== t8 || $[12] !== t9) {

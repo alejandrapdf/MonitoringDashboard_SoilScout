@@ -5,22 +5,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 /**
  * MetricCard Component
  * ---------------------
- * A small UI block used to display key site-health metrics such as temperature or soil moisture.
+ * A small UI block used to display key site-health metrics such as temperature or moisture.
  * 
  * Props:
- *  - `label`   : Name of the metric (e.g., "Soil Moisture")
+ *  - `label`   : Name of the metric (e.g., "Moisture")
  *  - `value`   : Current reading displayed prominently as the card focus
- *  - `critical`: When true, visually emphasises the card to warn the user of unhealthy soil levels
+ *  - `critical`: When true, visually emphasises the card to warn the user of unhealthy levels
  *
  * UI Reasoning & Visual Intent:
  *  - High contrast value text ensures the latest reading is scannable at a glance
  *  - Hover elevation (`hover:shadow-md`) makes UI feel responsive + modern
  *  - Rounded borders and muted surfaces reduce visual fatigue over long monitoring sessions
  * 
- * Future Scope:
- *  - `critical` may later be tied to automated insights such as "moisture too low" or 
- *    "temperature unsafe," guiding users toward soil-care actions directly from the dashboard.
- */
+*/
 export default function MetricCard({ label, value, critical }) {
   return (
     <Card

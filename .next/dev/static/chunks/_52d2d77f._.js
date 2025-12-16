@@ -80,12 +80,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 function Sidebar() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(28);
-    if ($[0] !== "6ef35f103f1377bc80963c5ee9c6658c6c53e66fb9adb03ac8751ca637eb1612") {
-        for(let $i = 0; $i < 28; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(21);
+    if ($[0] !== "bfb527d023d7d4c3304945e5122cc1208246c9558872316395dfb1800f3ff43d") {
+        for(let $i = 0; $i < 21; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "6ef35f103f1377bc80963c5ee9c6658c6c53e66fb9adb03ac8751ca637eb1612";
+        $[0] = "bfb527d023d7d4c3304945e5122cc1208246c9558872316395dfb1800f3ff43d";
     }
     const [collapsed] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
@@ -95,194 +95,164 @@ function Sidebar() {
         ${collapsed ? "w-20" : "w-60"}
       `;
     let t1;
-    if ($[1] !== collapsed) {
-        t1 = !collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$soilScout$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$soilScout$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-            alt: "SoilScout logo",
-            width: 130
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex items-center justify-center py-6",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$soilScout$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$soilScout$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                alt: "SoilScout logo",
+                width: 130
+            }, void 0, false, {
+                fileName: "[project]/app/components/dashboard/Sidebar.js",
+                lineNumber: 54,
+                columnNumber: 65
+            }, this)
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
             lineNumber: 54,
-            columnNumber: 24
-        }, this);
-        $[1] = collapsed;
-        $[2] = t1;
-    } else {
-        t1 = $[2];
-    }
-    let t2;
-    if ($[3] !== collapsed) {
-        t2 = collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$icon$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$icon$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-            alt: "SoilScout icon",
-            width: 42
-        }, void 0, false, {
-            fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 62,
-            columnNumber: 23
-        }, this);
-        $[3] = collapsed;
-        $[4] = t2;
-    } else {
-        t2 = $[4];
-    }
-    let t3;
-    if ($[5] !== t1 || $[6] !== t2) {
-        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center justify-center py-6",
-            children: [
-                t1,
-                t2
-            ]
-        }, void 0, true, {
-            fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 70,
             columnNumber: 10
         }, this);
-        $[5] = t1;
-        $[6] = t2;
-        $[7] = t3;
+        $[1] = t1;
     } else {
-        t3 = $[7];
+        t1 = $[1];
     }
-    let t4;
-    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__["Home"], {
+    let t2;
+    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__["Home"], {
             size: 18
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 79,
+            lineNumber: 61,
             columnNumber: 10
         }, this);
-        $[8] = t4;
+        $[2] = t2;
     } else {
-        t4 = $[8];
+        t2 = $[2];
     }
-    let t5;
-    if ($[9] !== collapsed || $[10] !== pathname) {
-        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
+    let t3;
+    if ($[3] !== collapsed || $[4] !== pathname) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
             href: "/",
-            icon: t4,
+            icon: t2,
             label: "Dashboard",
             collapsed: collapsed,
             pathname: pathname
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 86,
+            lineNumber: 68,
             columnNumber: 10
         }, this);
-        $[9] = collapsed;
-        $[10] = pathname;
-        $[11] = t5;
+        $[3] = collapsed;
+        $[4] = pathname;
+        $[5] = t3;
     } else {
-        t5 = $[11];
+        t3 = $[5];
     }
-    let t6;
-    if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cpu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Cpu$3e$__["Cpu"], {
+    let t4;
+    if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cpu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Cpu$3e$__["Cpu"], {
             size: 18
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 95,
+            lineNumber: 77,
             columnNumber: 10
         }, this);
-        $[12] = t6;
+        $[6] = t4;
     } else {
-        t6 = $[12];
+        t4 = $[6];
     }
-    let t7;
-    if ($[13] !== collapsed || $[14] !== pathname) {
-        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
+    let t5;
+    if ($[7] !== collapsed || $[8] !== pathname) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
             href: "/secondPage",
-            icon: t6,
+            icon: t4,
             label: "Sensors",
             collapsed: collapsed,
             pathname: pathname
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 102,
+            lineNumber: 84,
             columnNumber: 10
         }, this);
-        $[13] = collapsed;
-        $[14] = pathname;
-        $[15] = t7;
+        $[7] = collapsed;
+        $[8] = pathname;
+        $[9] = t5;
     } else {
-        t7 = $[15];
+        t5 = $[9];
     }
-    let t8;
-    if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
-        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Map$3e$__["Map"], {
+    let t6;
+    if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Map$3e$__["Map"], {
             size: 18
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 111,
+            lineNumber: 93,
             columnNumber: 10
         }, this);
-        $[16] = t8;
+        $[10] = t6;
     } else {
-        t8 = $[16];
+        t6 = $[10];
     }
-    let t9;
-    if ($[17] !== collapsed || $[18] !== pathname) {
-        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
+    let t7;
+    if ($[11] !== collapsed || $[12] !== pathname) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SidebarItem, {
             href: "/thirdPage",
-            icon: t8,
+            icon: t6,
             label: "Map",
             collapsed: collapsed,
             pathname: pathname
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 118,
+            lineNumber: 100,
             columnNumber: 10
         }, this);
-        $[17] = collapsed;
-        $[18] = pathname;
-        $[19] = t9;
+        $[11] = collapsed;
+        $[12] = pathname;
+        $[13] = t7;
     } else {
-        t9 = $[19];
+        t7 = $[13];
     }
-    let t10;
-    if ($[20] !== t5 || $[21] !== t7 || $[22] !== t9) {
-        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+    let t8;
+    if ($[14] !== t3 || $[15] !== t5 || $[16] !== t7) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
             className: "flex flex-col gap-2 px-3",
             children: [
+                t3,
                 t5,
-                t7,
-                t9
+                t7
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 127,
-            columnNumber: 11
+            lineNumber: 109,
+            columnNumber: 10
         }, this);
-        $[20] = t5;
-        $[21] = t7;
-        $[22] = t9;
-        $[23] = t10;
+        $[14] = t3;
+        $[15] = t5;
+        $[16] = t7;
+        $[17] = t8;
     } else {
-        t10 = $[23];
+        t8 = $[17];
     }
-    let t11;
-    if ($[24] !== t0 || $[25] !== t10 || $[26] !== t3) {
-        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
+    let t9;
+    if ($[18] !== t0 || $[19] !== t8) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
             className: t0,
             children: [
-                t3,
-                t10
+                t1,
+                t8
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 137,
-            columnNumber: 11
+            lineNumber: 119,
+            columnNumber: 10
         }, this);
-        $[24] = t0;
-        $[25] = t10;
-        $[26] = t3;
-        $[27] = t11;
+        $[18] = t0;
+        $[19] = t8;
+        $[20] = t9;
     } else {
-        t11 = $[27];
+        t9 = $[20];
     }
-    return t11;
+    return t9;
 }
 _s(Sidebar, "HNWnbYHMG0XqI1eetyTanLJn9Vk=", false, function() {
     return [
@@ -306,11 +276,11 @@ _c = Sidebar;
    - Works cleanly with new items or nested routes later
 ============================================================================= */ function SidebarItem(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "6ef35f103f1377bc80963c5ee9c6658c6c53e66fb9adb03ac8751ca637eb1612") {
+    if ($[0] !== "bfb527d023d7d4c3304945e5122cc1208246c9558872316395dfb1800f3ff43d") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "6ef35f103f1377bc80963c5ee9c6658c6c53e66fb9adb03ac8751ca637eb1612";
+        $[0] = "bfb527d023d7d4c3304945e5122cc1208246c9558872316395dfb1800f3ff43d";
     }
     const { icon, label, collapsed, href, pathname } = t0;
     const isActive = pathname === href;
@@ -325,7 +295,7 @@ _c = Sidebar;
             children: label
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 186,
+            lineNumber: 167,
             columnNumber: 24
         }, this);
         $[1] = collapsed;
@@ -345,7 +315,7 @@ _c = Sidebar;
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 195,
+            lineNumber: 176,
             columnNumber: 10
         }, this);
         $[4] = icon;
@@ -362,7 +332,7 @@ _c = Sidebar;
             children: t3
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Sidebar.js",
-            lineNumber: 205,
+            lineNumber: 186,
             columnNumber: 10
         }, this);
         $[8] = href;

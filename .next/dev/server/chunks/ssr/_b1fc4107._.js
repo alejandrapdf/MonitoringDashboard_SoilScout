@@ -112,7 +112,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$dashboa
 ;
 ;
 const metadata = {
-    title: "Soil Monitoring Dashboard",
+    title: "Air Monitoring Dashboard",
     description: "Live system monitoring interface"
 };
 function RootLayout({ children }) {

@@ -27,7 +27,7 @@ function MetricToggle({ metric, setMetric }) {
               ${active ? "bg-[#2e2e2e] text-[#8FFFA2] border-[#72e06a] shadow-sm" // MATCHES YOUR SIDEBAR
                  : "bg-transparent text-gray-300 border-gray-500 hover:text-white hover:border-gray-300"}
             `,
-                children: m === "moisture" ? "Soil Moisture" : "Temperature"
+                children: m === "moisture" ? "Moisture" : "Temperature"
             }, m, false, {
                 fileName: "[project]/app/components/dashboard/MetricToggle.js",
                 lineNumber: 33,
@@ -192,12 +192,12 @@ function MetricCard({ label, value, critical }) {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/dashboard/MetricCard.js",
-                    lineNumber: 38,
+                    lineNumber: 35,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/dashboard/MetricCard.js",
-                lineNumber: 37,
+                lineNumber: 34,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$dashboard$2f$ui$2f$card$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -209,18 +209,18 @@ function MetricCard({ label, value, critical }) {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/dashboard/MetricCard.js",
-                    lineNumber: 44,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/dashboard/MetricCard.js",
-                lineNumber: 43,
+                lineNumber: 40,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/dashboard/MetricCard.js",
-        lineNumber: 26,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }
@@ -355,7 +355,7 @@ function MetricDisplaySection({ metric }) {
         labels: formattedDates,
         datasets: [
             {
-                label: metric === "moisture" ? "Soil Moisture (%)" : "Temperature (°C)",
+                label: metric === "moisture" ? "Moisture (%)" : "Temperature (°C)",
                 data: values,
                 borderColor: "rgb(34,197,94)",
                 backgroundColor: "rgba(34,197,94,0.4)",
@@ -406,7 +406,7 @@ function MetricDisplaySection({ metric }) {
                 "data-cy": "metric-cards",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$dashboard$2f$MetricCard$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        label: `Latest ${metric === "moisture" ? "Soil Moisture" : "Temperature"}`,
+                        label: `Latest ${metric === "moisture" ? "Moisture" : "Temperature"}`,
                         value: `${latest}${metric === "moisture" ? "%" : "°C"}`
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/MetricDisplaySection.js",
