@@ -81,16 +81,16 @@ var _s = __turbopack_context__.k.signature();
 function Sidebar() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(28);
-    if ($[0] !== "6ef35f103f1377bc80963c5ee9c6658c6c53e66fb9adb03ac8751ca637eb1612") {
+    if ($[0] !== "6c16fb8554d87606ec150c3dba8e36748d280557997953c79be4851fb92ad940") {
         for(let $i = 0; $i < 28; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "6ef35f103f1377bc80963c5ee9c6658c6c53e66fb9adb03ac8751ca637eb1612";
+        $[0] = "6c16fb8554d87606ec150c3dba8e36748d280557997953c79be4851fb92ad940";
     }
     const [collapsed] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
     const t0 = `
-        flex flex-col min-h-screen bg-[#2F4F4F]
+        flex flex-col min-h-screen bg-[var(--sidebar-bg)]
         transition-all duration-300 shadow-inner h-screen
         ${collapsed ? "w-20" : "w-60"}
       `;
@@ -306,11 +306,11 @@ _c = Sidebar;
    - Works cleanly with new items or nested routes later
 ============================================================================= */ function SidebarItem(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "6ef35f103f1377bc80963c5ee9c6658c6c53e66fb9adb03ac8751ca637eb1612") {
+    if ($[0] !== "6c16fb8554d87606ec150c3dba8e36748d280557997953c79be4851fb92ad940") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "6ef35f103f1377bc80963c5ee9c6658c6c53e66fb9adb03ac8751ca637eb1612";
+        $[0] = "6c16fb8554d87606ec150c3dba8e36748d280557997953c79be4851fb92ad940";
     }
     const { icon, label, collapsed, href, pathname } = t0;
     const isActive = pathname === href;
@@ -400,55 +400,47 @@ var _s = __turbopack_context__.k.signature();
 ;
 function Topbar() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(8);
-    if ($[0] !== "054c311b3abff36aad5df63445991ba2a37a2f945496814febb00d828bc657f0") {
-        for(let $i = 0; $i < 8; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(10);
+    if ($[0] !== "04bcbf06f8f4c5334987868adcbc855cb528da036e1290c7ffcc09e94adba30b") {
+        for(let $i = 0; $i < 10; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "054c311b3abff36aad5df63445991ba2a37a2f945496814febb00d828bc657f0";
+        $[0] = "04bcbf06f8f4c5334987868adcbc855cb528da036e1290c7ffcc09e94adba30b";
     }
     const [menuOpen, setMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const menuRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t0;
+    let t1;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+        t0 = ({
+            "Topbar[useEffect()]": ()=>{
+                const handleClick = {
+                    "Topbar[useEffect() > handleClick]": (e)=>{
+                        if (menuRef.current && !menuRef.current.contains(e.target)) {
+                            setMenuOpen(false);
+                        }
+                    }
+                }["Topbar[useEffect() > handleClick]"];
+                document.addEventListener("click", handleClick);
+                return ()=>document.removeEventListener("click", handleClick);
+            }
+        })["Topbar[useEffect()]"];
+        t1 = [];
+        $[1] = t0;
+        $[2] = t1;
+    } else {
+        t0 = $[1];
+        t1 = $[2];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t0, t1);
+    let t2;
+    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
             className: "text-xl font-semibold tracking-tight",
             children: "Dashboard"
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Topbar.js",
-            lineNumber: 38,
-            columnNumber: 10
-        }, this);
-        $[1] = t0;
-    } else {
-        t0 = $[1];
-    }
-    let t1;
-    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-            type: "text",
-            placeholder: "Search...",
-            className: "w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zinc-800 shadow-sm border border-zinc-300 dark:border-zinc-700\r\n          focus:outline-none focus:ring-2 focus:ring-green-500"
-        }, void 0, false, {
-            fileName: "[project]/app/components/dashboard/Topbar.js",
-            lineNumber: 45,
-            columnNumber: 10
-        }, this);
-        $[2] = t1;
-    } else {
-        t1 = $[2];
-    }
-    let t2;
-    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            onClick: {
-                "Topbar[<button>.onClick]": ()=>setMenuOpen(_TopbarButtonOnClickSetMenuOpen)
-            }["Topbar[<button>.onClick]"],
-            className: "w-9 h-9 rounded-full bg-green-700 text-white font-bold\r\n            flex items-center justify-center uppercase",
-            children: "A"
-        }, void 0, false, {
-            fileName: "[project]/app/components/dashboard/Topbar.js",
-            lineNumber: 52,
+            lineNumber: 62,
             columnNumber: 10
         }, this);
         $[3] = t2;
@@ -456,8 +448,40 @@ function Topbar() {
         t2 = $[3];
     }
     let t3;
-    if ($[4] !== menuOpen) {
-        t3 = menuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+            type: "text",
+            placeholder: "Search...",
+            className: "w-64 px-3 py-2 rounded-lg text-sm\r\n          bg-white dark:bg-zinc-800 shadow-sm border border-zinc-300 dark:border-zinc-700\r\n          focus:outline-none focus:ring-2 focus:ring-green-500"
+        }, void 0, false, {
+            fileName: "[project]/app/components/dashboard/Topbar.js",
+            lineNumber: 69,
+            columnNumber: 10
+        }, this);
+        $[4] = t3;
+    } else {
+        t3 = $[4];
+    }
+    let t4;
+    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            onClick: {
+                "Topbar[<button>.onClick]": ()=>setMenuOpen(_TopbarButtonOnClickSetMenuOpen)
+            }["Topbar[<button>.onClick]"],
+            className: "w-9 h-9 rounded-full bg-green-700 text-white font-bold\r\n            flex items-center justify-center uppercase",
+            children: "A"
+        }, void 0, false, {
+            fileName: "[project]/app/components/dashboard/Topbar.js",
+            lineNumber: 76,
+            columnNumber: 10
+        }, this);
+        $[5] = t4;
+    } else {
+        t4 = $[5];
+    }
+    let t5;
+    if ($[6] !== menuOpen) {
+        t5 = menuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "absolute right-0 mt-2 w-48 bg-white dark:bg-zinc-800\r\n            border border-zinc-300 dark:border-zinc-700 rounded-md shadow-lg p-3\r\n            text-sm space-y-2 z-50",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 className: "w-full flex items-center gap-2 p-2 text-left hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded",
@@ -466,68 +490,68 @@ function Topbar() {
                         size: 16
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                        lineNumber: 61,
+                        lineNumber: 85,
                         columnNumber: 330
                     }, this),
                     " Logout"
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                lineNumber: 61,
+                lineNumber: 85,
                 columnNumber: 216
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/components/dashboard/Topbar.js",
-            lineNumber: 61,
+            lineNumber: 85,
             columnNumber: 22
         }, this);
-        $[4] = menuOpen;
-        $[5] = t3;
+        $[6] = menuOpen;
+        $[7] = t5;
     } else {
-        t3 = $[5];
+        t5 = $[7];
     }
-    let t4;
-    if ($[6] !== t3) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+    let t6;
+    if ($[8] !== t5) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
             className: "flex items-center justify-between w-full px-6 py-4 dark:bg--zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50\r\n      border-b border-zinc-200 dark:border-zinc-800",
             children: [
-                t0,
+                t2,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center gap-4",
                     children: [
-                        t1,
+                        t3,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "relative",
                             ref: menuRef,
                             children: [
-                                t2,
-                                t3
+                                t4,
+                                t5
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/dashboard/Topbar.js",
-                            lineNumber: 69,
+                            lineNumber: 93,
                             columnNumber: 254
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/dashboard/Topbar.js",
-                    lineNumber: 69,
+                    lineNumber: 93,
                     columnNumber: 209
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/dashboard/Topbar.js",
-            lineNumber: 69,
+            lineNumber: 93,
             columnNumber: 10
         }, this);
-        $[6] = t3;
-        $[7] = t4;
+        $[8] = t5;
+        $[9] = t6;
     } else {
-        t4 = $[7];
+        t6 = $[9];
     }
-    return t4;
+    return t6;
 }
-_s(Topbar, "SeA4Zb/BlHCEDM6iF+AjpXWQepU=");
+_s(Topbar, "m+Bw3p56aCldBbEoFNtGoL2OdKs=");
 _c = Topbar;
 function _TopbarButtonOnClickSetMenuOpen(v) {
     return !v;
@@ -538,6 +562,135 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
+"[project]/app/layout.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>RootLayout,
+    "metadata",
+    ()=>metadata
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+// ============================================================================
+// Root Layout
+// ----------------------------------------------------------------------------
+// Global application shell used across all routes.
+//
+// Responsibilities:
+// • Persist Sidebar across page transitions using the App Router
+// • Provide a consistent Topbar for navigation / user controls
+// • Render dynamic page content inside <main /> via {children}
+//
+// Layout Stack (visual):
+//
+// ┌──────────────────────────────────────────────────────────────┐
+// │ Sidebar  |  Topbar (fixed top of content column)              │
+// │          |  ────────────────────────────────────────────────  │
+// │          |  Page Content (scrollable)                         │
+// │          |                                                    │
+// └──────────────────────────────────────────────────────────────┘
+//
+// Design Rationale:
+// - Sidebar anchors navigation spatially → reduces cognitive load
+// - Content region scrolls independently for better readability
+// - Topbar sits above content to create a clear information hierarchy
+// ============================================================================
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$dashboard$2f$Sidebar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/dashboard/Sidebar.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$dashboard$2f$Topbar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/dashboard/Topbar.js [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+const metadata = {
+    title: "SoilScout Dashboard",
+    description: "Live system monitoring interface"
+};
+function RootLayout(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "689164b6458e309d1ecc5fc89be41792f2e7c37825b2c9798649bc87cd11ac71") {
+        for(let $i = 0; $i < 5; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "689164b6458e309d1ecc5fc89be41792f2e7c37825b2c9798649bc87cd11ac71";
+    }
+    const { children } = t0;
+    let t1;
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$dashboard$2f$Sidebar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "[project]/app/layout.js",
+            lineNumber: 48,
+            columnNumber: 10
+        }, this);
+        $[1] = t1;
+    } else {
+        t1 = $[1];
+    }
+    let t2;
+    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$dashboard$2f$Topbar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "[project]/app/layout.js",
+            lineNumber: 55,
+            columnNumber: 10
+        }, this);
+        $[2] = t2;
+    } else {
+        t2 = $[2];
+    }
+    let t3;
+    if ($[3] !== children) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
+            lang: "en",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
+                className: "flex h-screen bg-background text-foreground",
+                children: [
+                    t1,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col flex-1",
+                        children: [
+                            t2,
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                                className: "p-6 lg:p-10",
+                                children: children
+                            }, void 0, false, {
+                                fileName: "[project]/app/layout.js",
+                                lineNumber: 62,
+                                columnNumber: 134
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/layout.js",
+                        lineNumber: 62,
+                        columnNumber: 92
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/layout.js",
+                lineNumber: 62,
+                columnNumber: 26
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/app/layout.js",
+            lineNumber: 62,
+            columnNumber: 10
+        }, this);
+        $[3] = children;
+        $[4] = t3;
+    } else {
+        t3 = $[4];
+    }
+    return t3;
+}
+_c = RootLayout;
+var _c;
+__turbopack_context__.k.register(_c, "RootLayout");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
 ]);
 
-//# sourceMappingURL=_52d2d77f._.js.map
+//# sourceMappingURL=_e33f598b._.js.map

@@ -1,3 +1,4 @@
+
 // ============================================================================
 // Root Layout
 // ----------------------------------------------------------------------------
@@ -28,14 +29,14 @@ import Sidebar from "./components/dashboard/Sidebar";
 import Topbar from "./components/dashboard/Topbar";
 
 export const metadata = {
-  title: "SoilScout Dashboard",
+  title: "Soil Monitoring Dashboard",
   description: "Live system monitoring interface",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex h-screen bg-background text-foreground">
+      <body className="bg-black flex h-screen bg-background text-foreground">
 
         {/* Persistent Navigator */}
         <Sidebar />

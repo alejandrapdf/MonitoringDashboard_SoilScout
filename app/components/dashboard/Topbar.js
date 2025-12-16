@@ -36,16 +36,7 @@ export default function Topbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
 
-  useEffect(() => {
-    const handleClick = (e) => {
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
-        setMenuOpen(false);
-      }
-    };
-    document.addEventListener("click", handleClick);
-    return () => document.removeEventListener("click", handleClick);
-  }, []);
-
+  
 
   /* ==========================================================================
      UI LAYOUT STRUCTURE

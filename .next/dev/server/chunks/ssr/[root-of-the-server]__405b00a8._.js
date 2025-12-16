@@ -98,7 +98,7 @@ function Sidebar() {
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
         className: `
-        flex flex-col min-h-screen bg-[#2F4F4F]
+        flex flex-col min-h-screen bg-[var(--sidebar-bg)]
         transition-all duration-300 shadow-inner h-screen
         ${collapsed ? "w-20" : "w-60"}
       `,
@@ -267,6 +267,15 @@ function Topbar() {
      - Future space for authentication controls and settings
   ========================================================================== */ const [menuOpen, setMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const menuRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const handleClick = (e)=>{
+            if (menuRef.current && !menuRef.current.contains(e.target)) {
+                setMenuOpen(false);
+            }
+        };
+        document.addEventListener("click", handleClick);
+        return ()=>document.removeEventListener("click", handleClick);
+    }, []);
     /* ==========================================================================
      UI LAYOUT STRUCTURE
      --------------------------------------------------------------------------
@@ -286,7 +295,7 @@ function Topbar() {
                 children: "Dashboard"
             }, void 0, false, {
                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                lineNumber: 61,
+                lineNumber: 70,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -298,7 +307,7 @@ function Topbar() {
                         className: "w-64 px-3 py-2 rounded-lg text-sm   bg-white dark:bg-zinc-800 shadow-sm border border-zinc-300 dark:border-zinc-700   focus:outline-none focus:ring-2 focus:ring-green-500"
                     }, void 0, false, {
                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                        lineNumber: 67,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -311,7 +320,7 @@ function Topbar() {
                                 children: "A"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                lineNumber: 77,
+                                lineNumber: 86,
                                 columnNumber: 11
                             }, this),
                             menuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -323,41 +332,108 @@ function Topbar() {
                                             size: 16
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/dashboard/Topbar.js",
-                                            lineNumber: 94,
+                                            lineNumber: 103,
                                             columnNumber: 17
                                         }, this),
                                         " Logout"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/dashboard/Topbar.js",
-                                    lineNumber: 93,
+                                    lineNumber: 102,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                                lineNumber: 87,
+                                lineNumber: 96,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/dashboard/Topbar.js",
-                        lineNumber: 76,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/dashboard/Topbar.js",
-                lineNumber: 64,
+                lineNumber: 73,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/dashboard/Topbar.js",
-        lineNumber: 55,
+        lineNumber: 64,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/app/layout.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>RootLayout,
+    "metadata",
+    ()=>metadata
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$dashboard$2f$Sidebar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/dashboard/Sidebar.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$dashboard$2f$Topbar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/dashboard/Topbar.js [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+const metadata = {
+    title: "SoilScout Dashboard",
+    description: "Live system monitoring interface"
+};
+function RootLayout({ children }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
+        lang: "en",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
+            className: "flex h-screen bg-background text-foreground",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$dashboard$2f$Sidebar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    fileName: "[project]/app/layout.js",
+                    lineNumber: 43,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex flex-col flex-1",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$dashboard$2f$Topbar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                            fileName: "[project]/app/layout.js",
+                            lineNumber: 47,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                            className: "p-6 lg:p-10",
+                            children: children
+                        }, void 0, false, {
+                            fileName: "[project]/app/layout.js",
+                            lineNumber: 50,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/app/layout.js",
+                    lineNumber: 46,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/app/layout.js",
+            lineNumber: 40,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/app/layout.js",
+        lineNumber: 39,
         columnNumber: 5
     }, this);
 }
 }),
 ];
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__1f34d80b._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__405b00a8._.js.map

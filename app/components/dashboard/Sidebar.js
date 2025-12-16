@@ -40,7 +40,7 @@ export default function Sidebar() {
   return (
     <aside
       className={`
-        flex flex-col min-h-screen bg-[var(--sidebar-bg)]
+        flex flex-col min-h-screen bg-[#2F4F4F]
         transition-all duration-300 shadow-inner h-screen
         ${collapsed ? "w-20" : "w-60"}
       `}
